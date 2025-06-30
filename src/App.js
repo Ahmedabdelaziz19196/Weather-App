@@ -1,14 +1,12 @@
 import { useEffect, useReducer } from "react";
 import "./App.css";
 import NavBar from "./Component/NavBar";
-import ToggleTheme from "./Component/ToggleTheme";
 import { LightDarkContext } from "./Context/LightDarkContext";
 import ResutReducer from "./Reducers/ResultReducer";
 import { Routes, Route } from "react-router-dom";
 import Weather from "./Component/Weather";
 import Map from "./Component/Map";
 import Athan from "./Component/Athan";
-
 //MUI
 import Grid from "@mui/material/Grid";
 
@@ -42,17 +40,11 @@ function App() {
                 }}
                 data-theme={darkTheme ? "dark" : "light"}
             >
-                <Grid
-                    container
-                    spacing={2}
-                    style={{ minHeight: "calc(100vh - 40px)" }}
-                >
+                <Grid container spacing={2} style={{ minHeight: "100vh" }}>
                     <Grid item size={{ xs: 2, sm: 2, md: 2, lg: 1 }}>
                         <NavBar />
                     </Grid>
                     <Grid item size={{ xs: 10, sm: 10, md: 10, lg: 11 }}>
-                        <ToggleTheme />
-
                         <Routes>
                             <Route path="/" element={<Weather />} />
                             <Route path="/map" element={<Map />} />

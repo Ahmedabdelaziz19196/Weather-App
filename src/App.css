@@ -20,7 +20,7 @@ body {
     height: 100%;
 }
 .App {
-    padding: 20px;
+    /* padding: 20px; */
 }
 [data-theme="dark"] {
     background-color: var(--main-dark-background);
