@@ -1,6 +1,6 @@
 import "./Weather.css";
-import SearchBar from "./SearchBar";
-import ToggleTheme from "./ToggleTheme";
+// import SearchBar from "./SearchBar";
+// import ToggleTheme from "./ToggleTheme";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import ThermostatIcon from "@mui/icons-material/Thermostat";
@@ -10,28 +10,16 @@ import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import { useContext } from "react";
 import { LightDarkContext } from "../Context/LightDarkContext";
 import SunnyIcon from "../SunnyIcon";
+// import DialogContent from "@mui/material/DialogContent";
 
 export default function Weather() {
     let { darkTheme } = useContext(LightDarkContext);
 
     return (
-        <div style={{ padding: "10px  10px 10px 0", height: "100%" }}>
+        <div style={{ padding: "10px  10px 10px 10px" }}>
             <Grid container spacing={2} sx={{ height: "calc(100vh - )" }}>
                 <Grid item size={{ xs: 12, sm: 12, md: 12, lg: 7 }}>
                     <Stack spacing={2}>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "space-between",
-                                gap: "20px",
-                            }}
-                        >
-                            <div style={{ flex: "1" }}>
-                                <SearchBar />
-                            </div>
-                            <ToggleTheme />
-                        </div>
                         <div
                             style={{
                                 display: "flex",
@@ -56,6 +44,7 @@ export default function Weather() {
                                 }}
                             >
                                 <div
+                                    className="main-weather"
                                     style={{
                                         display: "flex",
                                         justifyContent: "space-between",
@@ -69,16 +58,18 @@ export default function Weather() {
                                     }}
                                 >
                                     {/* Frist section */}
-                                    <div>
-                                        <h1>Alexandria</h1>
-                                        <p
-                                            style={{
-                                                fontSize: "15px",
-                                                marginBottom: "10px",
-                                            }}
-                                        >
-                                            chance of rains: 0%
-                                        </p>
+                                    <div className="location">
+                                        <div>
+                                            <h1>Alexandria</h1>
+                                            <p
+                                                style={{
+                                                    fontSize: "15px",
+                                                    marginBottom: "10px",
+                                                }}
+                                            >
+                                                chance of rains: 0%
+                                            </p>
+                                        </div>
                                         <h1
                                             className="the-temp"
                                             data-temp={
@@ -86,10 +77,10 @@ export default function Weather() {
                                             }
                                             style={{ fontSize: "90px" }}
                                         >
-                                            31
+                                            25°
                                         </h1>
                                     </div>
-                                    <div>
+                                    <div className="weather-icon">
                                         <SunnyIcon
                                             style={{
                                                 width: "200px",
@@ -128,7 +119,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -148,7 +139,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -168,7 +159,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -188,7 +179,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -208,7 +199,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -228,7 +219,7 @@ export default function Weather() {
                                                 lg: 2,
                                             }}
                                         >
-                                            <div>
+                                            <div className="forecast-grid-content">
                                                 <p>6:00 AM</p>
                                                 <SunnyIcon
                                                     style={{
@@ -268,10 +259,12 @@ export default function Weather() {
                                     air conditions
                                 </p>
                                 <Grid
+                                    data-airCondition={
+                                        darkTheme ? "dark" : "light"
+                                    }
                                     className="airCondition"
                                     container
                                     spacing={2}
-                                    // style={{ minHeight: "100vh" }}
                                 >
                                     <Grid
                                         className="airConditionDetails"
@@ -418,7 +411,235 @@ export default function Weather() {
                         </div>
                     </Stack>
                 </Grid>
-                <Grid item size={{ xs: 12, sm: 12, md: 12, lg: 5 }}></Grid>
+                <Grid item size={{ xs: 12, sm: 12, md: 12, lg: 5 }}>
+                    <div
+                        style={{
+                            background: darkTheme
+                                ? "var(--secondry-dark-background)"
+                                : "var(--secondry-light-background)",
+                            width: "100%",
+                            height: "100%",
+                            borderRadius: "10px",
+                            padding: "20px",
+                        }}
+                    >
+                        <p
+                            style={{
+                                textTransform: "uppercase",
+                                marginBottom: "10px",
+                            }}
+                        >
+                            7-day forecast
+                        </p>
+                        <div
+                            className="todayForecast"
+                            data-forcastTheme={darkTheme ? "dark" : "light"}
+                            style={{
+                                height: "calc(100% - 40px)",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between",
+                            }}
+                        >
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Sat</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Sun</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Mon</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Tue</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Wed</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Thu</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                            <div
+                                className="days-details"
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "flex",
+                                    justifyContent: "space-between",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <p>Fri</p>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "10px",
+                                    }}
+                                >
+                                    <SunnyIcon
+                                        style={{
+                                            width: "50px",
+                                            height: "50px",
+                                        }}
+                                    />
+                                    <p>Sunny</p>
+                                </div>
+                                <p>01-July</p>
+                            </div>
+                        </div>
+                    </div>
+                </Grid>
             </Grid>
         </div>
     );

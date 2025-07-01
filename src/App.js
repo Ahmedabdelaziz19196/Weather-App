@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import Weather from "./Component/Weather";
 import Map from "./Component/Map";
 import Athan from "./Component/Athan";
+import SearchBar from "./Component/SearchBar";
+import ToggleTheme from "./Component/ToggleTheme";
 //MUI
 import Grid from "@mui/material/Grid";
 
@@ -45,11 +47,44 @@ function App() {
                         <NavBar />
                     </Grid>
                     <Grid item size={{ xs: 10, sm: 10, md: 10, lg: 11 }}>
-                        <Routes>
-                            <Route path="/" element={<Weather />} />
-                            <Route path="/map" element={<Map />} />
-                            <Route path="/athan" element={<Athan />} />
-                        </Routes>
+                        <Grid size={12}>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-between",
+                                    gap: "20px",
+                                    padding: "10px",
+                                }}
+                            >
+                                <Grid
+                                    item
+                                    size={{ xs: 9, sm: 9, md: 9, lg: 7 }}
+                                >
+                                    <div style={{ flex: "1" }}>
+                                        <SearchBar />
+                                    </div>
+                                </Grid>
+                                <Grid
+                                    item
+                                    size={{ xs: 3, sm: 3, md: 3, lg: 5 }}
+                                    sx={{
+                                        display: "flex",
+                                        justifyContent: "right",
+                                        paddingRight: "10px",
+                                    }}
+                                >
+                                    <ToggleTheme />
+                                </Grid>
+                            </div>
+                        </Grid>
+                        <Grid size={12}>
+                            <Routes>
+                                <Route path="/" element={<Weather />} />
+                                <Route path="/map" element={<Map />} />
+                                <Route path="/athan" element={<Athan />} />
+                            </Routes>
+                        </Grid>
                     </Grid>
                 </Grid>
             </div>
