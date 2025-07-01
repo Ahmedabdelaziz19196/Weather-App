@@ -10,11 +10,46 @@ import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import { useContext } from "react";
 import { LightDarkContext } from "../Context/LightDarkContext";
 import SunnyIcon from "../SunnyIcon";
-// import DialogContent from "@mui/material/DialogContent";
+
+import React, { useEffect, useState } from "react";
+//axios library
+import axios from "axios";
 
 export default function Weather() {
     let { darkTheme } = useContext(LightDarkContext);
+    const [city, setCity] = useState({
+        currentCity: "",
+        currentLat: "",
+        currentLon: "",
+    });
 
+    useEffect(() => {
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(async (position) => {
+                const { latitude, longitude } = position.coords;
+                try {
+                    const response = await axios.get(
+                        `https://nominatim.openstreetmap.org/reverse`,
+                        {
+                            params: {
+                                lat: latitude,
+                                lon: longitude,
+                                format: "json",
+                            },
+                        }
+                    );
+                    const data = response.data;
+                    setCity({
+                        currentCity: data.address.city,
+                        currentLat: latitude,
+                        currentLon: longitude,
+                    });
+                } catch (err) {
+                    console.error(err);
+                }
+            });
+        }
+    }, []);
     return (
         <div style={{ padding: "10px  10px 10px 10px" }}>
             <Grid container spacing={2} sx={{ height: "calc(100vh - )" }}>
@@ -60,7 +95,7 @@ export default function Weather() {
                                     {/* Frist section */}
                                     <div className="location">
                                         <div>
-                                            <h1>Alexandria</h1>
+                                            <h1>{city.currentCity}</h1>
                                             <p
                                                 style={{
                                                     fontSize: "15px",
