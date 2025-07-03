@@ -5,62 +5,207 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import ThermostatIcon from "@mui/icons-material/Thermostat";
 import AirOutlinedIcon from "@mui/icons-material/AirOutlined";
-import WaterDropOutlinedIcon from "@mui/icons-material/WaterDropOutlined";
-import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 import { useContext } from "react";
 import { LightDarkContext } from "../Context/LightDarkContext";
-import SunnyIcon from "../SunnyIcon";
+
+//Weather Icon
+import SunnyIcon from "../Weather Icon/SunnyIcon";
+
+//Weather Icon
 
 import React, { useEffect, useState } from "react";
+import TheSwitchWeatherIcon from "../Functions/TheSwitchWeatherIcon";
 //axios library
 import axios from "axios";
 
 export default function Weather() {
     let { darkTheme } = useContext(LightDarkContext);
-    const [city, setCity] = useState({
-        currentCity: "",
+
+    const [location, setLocation] = useState({
+        currentLocation: "",
         currentLat: "",
         currentLon: "",
     });
 
-    useEffect(() => {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(
-                async (position) => {
-                    const { latitude, longitude } = position.coords;
-                    try {
-                        const response = await axios.get(
-                            `https://nominatim.openstreetmap.org/reverse`,
-                            {
-                                params: {
-                                    lat: latitude,
-                                    lon: longitude,
-                                    format: "json",
-                                },
-                            }
-                        );
-                        const data = response.data;
+    //current weather
+    let [currentWeather, setCurrentWeather] = useState({
+        theTemp: "",
+        maxTemp: "",
+        minTemp: "",
+        realFeel: "",
+        wind: "",
+        icon: "",
+        date: "",
+    });
+    //current weather
+    let [foreCastWeather, setForeCastWeather] = useState([
+        { date: "", temp: "", time: "", icon: "" },
+        { date: "", temp: "", time: "", icon: "" },
+        { date: "", temp: "", time: "", icon: "" },
+        { date: "", temp: "", time: "", icon: "" },
+        { date: "", temp: "", time: "", icon: "" },
+        { date: "", temp: "", time: "", icon: "" },
+    ]);
+    //forecast Weather
 
-                        setCity({
-                            currentCity:
-                                data.address.city ||
-                                data.address.town ||
-                                data.address.village ||
-                                data.address.county ||
-                                "Unknown",
-                            currentLat: latitude,
-                            currentLon: longitude,
-                        });
-                    } catch (err) {
-                        console.error(err);
-                    }
-                },
-                (error) => {
-                    console.error("Geolocation error", error);
-                }
-            );
-        }
+    let [weatherIcon, setWeatherIcon] = useState({
+        mainIcon: null,
+        hourOneIcon: null,
+        hourTwoIcon: null,
+        hourThreeIcon: null,
+        hourFourIcon: null,
+        hourFiveIcon: null,
+        hourSixIcon: null,
+    });
+
+    //-------------------------------------------------------------------------------------------------//
+    //get APIs
+    //get current location
+    useEffect(() => {
+        const controller = new AbortController();
+        axios
+            .get("http://ip-api.com/json", {
+                signal: controller.signal,
+            })
+            .then((response) => {
+                let data = response;
+                setLocation({
+                    currentLocation: data.data.city,
+                    currentLat: data.data.lat,
+                    currentLon: data.data.lon,
+                });
+            })
+            .catch((Error) => {
+                console.error(Error);
+            });
+        return () => {
+            controller.abort();
+        };
     }, []);
+    //get current location
+
+    //get 5-days/3 houre weather API
+    useEffect(() => {
+        const controller = new AbortController();
+
+        axios
+            .get("https://api.openweathermap.org/data/2.5/forecast", {
+                params: {
+                    lat: location.currentLat,
+                    lon: location.currentLon,
+                    appid: "6c9c3b62d2d6deeb6af6cfa3d92bd664",
+                    units: "metric",
+                },
+                signal: controller.signal,
+            })
+            .then((response) => {
+                let updateFiveHourForecast = response.data.list
+                    .slice(0, 6)
+                    .map((ele) => {
+                        let date = ele.dt_txt
+                            .split(" ")[0]
+                            .split("-")
+                            .reverse()
+                            .slice(0, 2)
+                            .join("-");
+                        let time = ele.dt_txt
+                            .split(" ")[1]
+                            .split(":")
+                            .slice(0, 2)
+                            .join(":");
+                        let temp = ele.main.temp.toFixed(0);
+                        let icon = ele.weather[0].icon;
+                        return { date, time, temp, icon };
+                    });
+                setForeCastWeather(updateFiveHourForecast);
+
+                if (updateFiveHourForecast[0].icon) {
+                    setWeatherIcon((prev) => ({
+                        ...prev,
+                        hourOneIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[0].icon
+                        ),
+                        hourTwoIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[1].icon
+                        ),
+                        hourThreeIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[2].icon
+                        ),
+                        hourFourIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[3].icon
+                        ),
+                        hourFiveIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[4].icon
+                        ),
+                        hourSixIcon: TheSwitchWeatherIcon(
+                            updateFiveHourForecast[5].icon
+                        ),
+                    }));
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+        return () => {
+            controller.abort();
+        };
+    }, [location.currentLat, location.currentLon]);
+    //get 5-days/3 houre weather API
+
+    //get current  Weather
+    useEffect(() => {
+        const controller = new AbortController();
+
+        axios
+            .get("https://api.openweathermap.org/data/2.5/weather", {
+                params: {
+                    lat: location.currentLat,
+                    lon: location.currentLon,
+                    appid: "6c9c3b62d2d6deeb6af6cfa3d92bd664",
+                },
+                signal: controller.signal,
+            })
+            .then((response) => {
+                let resTemp = Math.round(response.data.main.temp - 273.15);
+                let resMaxTemp = Math.round(
+                    response.data.main.temp_max - 273.15
+                );
+                let resMinTemp = Math.round(
+                    response.data.main.temp_min - 273.15
+                );
+                let resRealFeel = Math.round(
+                    response.data.main.feels_like - 273.15
+                );
+                let resWind = Number(
+                    (response.data.wind.speed * 3.6).toFixed(1)
+                );
+                let reIconCode = response.data.weather[0].icon;
+
+                setCurrentWeather({
+                    theTemp: resTemp,
+                    maxTemp: resMaxTemp,
+                    minTemp: resMinTemp,
+                    realFeel: resRealFeel,
+                    wind: resWind,
+                    icon: reIconCode,
+                });
+
+                setWeatherIcon({
+                    ...weatherIcon,
+                    mainIcon: TheSwitchWeatherIcon(reIconCode),
+                });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+        return () => {
+            controller.abort();
+        };
+    }, [location.currentLat, location.currentLon]);
+    //get current  Weather
+    //-------------------------------------------------------------------------------------------------//
 
     return (
         <div style={{ padding: "10px  10px 10px 10px" }}>
@@ -107,15 +252,7 @@ export default function Weather() {
                                     {/* Frist section */}
                                     <div className="location">
                                         <div>
-                                            <h1>{city.currentCity}</h1>
-                                            <p
-                                                style={{
-                                                    fontSize: "15px",
-                                                    marginBottom: "10px",
-                                                }}
-                                            >
-                                                chance of rains: 0%
-                                            </p>
+                                            <h1>{location.currentLocation}</h1>
                                         </div>
                                         <h1
                                             className="the-temp"
@@ -124,16 +261,17 @@ export default function Weather() {
                                             }
                                             style={{ fontSize: "90px" }}
                                         >
-                                            25°
+                                            {currentWeather.theTemp}°
                                         </h1>
                                     </div>
-                                    <div className="weather-icon">
-                                        <SunnyIcon
-                                            style={{
-                                                width: "200px",
-                                                height: "200px",
-                                            }}
-                                        />
+                                    <div
+                                        className="weather-icon"
+                                        style={{
+                                            width: "200px",
+                                            height: "200px",
+                                        }}
+                                    >
+                                        {weatherIcon.mainIcon}
                                     </div>
                                 </div>
 
@@ -167,14 +305,30 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[0].date}</p>
+                                                <p>{foreCastWeather[0].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourOneIcon
+                                                        }
+                                                    </div>
+                                                </div>
+
+                                                <p>
+                                                    {foreCastWeather[0].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                         <Grid
@@ -187,14 +341,29 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[1].date}</p>
+                                                <p>{foreCastWeather[1].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourTwoIcon
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    {foreCastWeather[1].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                         <Grid
@@ -207,14 +376,29 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[2].date}</p>
+                                                <p>{foreCastWeather[2].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourThreeIcon
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    {foreCastWeather[2].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                         <Grid
@@ -227,14 +411,29 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[3].date}</p>
+                                                <p>{foreCastWeather[3].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourFourIcon
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    {foreCastWeather[3].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                         <Grid
@@ -247,14 +446,29 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[4].date}</p>
+                                                <p>{foreCastWeather[4].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourFiveIcon
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    {foreCastWeather[4].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                         <Grid
@@ -267,14 +481,29 @@ export default function Weather() {
                                             }}
                                         >
                                             <div className="forecast-grid-content">
-                                                <p>6:00 AM</p>
-                                                <SunnyIcon
+                                                <p>{foreCastWeather[5].date}</p>
+                                                <p>{foreCastWeather[5].time}</p>
+                                                <div
                                                     style={{
-                                                        width: "50px",
-                                                        height: "50px",
+                                                        display: "flex",
+                                                        justifyContent:
+                                                            "center",
                                                     }}
-                                                />
-                                                <p>25°</p>
+                                                >
+                                                    <div
+                                                        style={{
+                                                            width: "50px",
+                                                            height: "50px",
+                                                        }}
+                                                    >
+                                                        {
+                                                            weatherIcon.hourSixIcon
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    {foreCastWeather[5].temp}°
+                                                </p>
                                             </div>
                                         </Grid>
                                     </Grid>
@@ -316,7 +545,12 @@ export default function Weather() {
                                     <Grid
                                         className="airConditionDetails"
                                         item
-                                        size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
+                                        size={{
+                                            xs: 12,
+                                            sm: 12,
+                                            md: 12,
+                                            lg: 6,
+                                        }}
                                     >
                                         <div>
                                             <div
@@ -326,7 +560,9 @@ export default function Weather() {
                                                 }}
                                             >
                                                 <ThermostatIcon
-                                                    style={{ fontSize: "40px" }}
+                                                    style={{
+                                                        fontSize: "40px",
+                                                    }}
                                                 />
                                                 <p
                                                     style={{
@@ -340,10 +576,10 @@ export default function Weather() {
                                             <div>
                                                 <h2
                                                     style={{
-                                                        textAlign: "center",
+                                                        paddingLeft: "10px",
                                                     }}
                                                 >
-                                                    25°
+                                                    {currentWeather.realFeel}°
                                                 </h2>
                                             </div>
                                         </div>
@@ -351,42 +587,12 @@ export default function Weather() {
                                     <Grid
                                         className="airConditionDetails"
                                         item
-                                        size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
-                                    >
-                                        <div>
-                                            <div
-                                                style={{
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                }}
-                                            >
-                                                <WaterDropOutlinedIcon
-                                                    style={{ fontSize: "40px" }}
-                                                />
-                                                <p
-                                                    style={{
-                                                        fontSize: "20px",
-                                                        margin: "0 8px",
-                                                    }}
-                                                >
-                                                    Chance Of rain
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h2
-                                                    style={{
-                                                        textAlign: "center",
-                                                    }}
-                                                >
-                                                    0%
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </Grid>
-                                    <Grid
-                                        className="airConditionDetails"
-                                        item
-                                        size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
+                                        size={{
+                                            xs: 12,
+                                            sm: 12,
+                                            md: 12,
+                                            lg: 6,
+                                        }}
                                     >
                                         <div>
                                             <div
@@ -396,7 +602,9 @@ export default function Weather() {
                                                 }}
                                             >
                                                 <AirOutlinedIcon
-                                                    style={{ fontSize: "40px" }}
+                                                    style={{
+                                                        fontSize: "40px",
+                                                    }}
                                                 />
                                                 <p
                                                     style={{
@@ -410,10 +618,10 @@ export default function Weather() {
                                             <div>
                                                 <h2
                                                     style={{
-                                                        textAlign: "center",
+                                                        paddingLeft: "10px",
                                                     }}
                                                 >
-                                                    0.2 Km/h
+                                                    {currentWeather.wind} Km/h
                                                 </h2>
                                             </div>
                                         </div>
@@ -421,7 +629,12 @@ export default function Weather() {
                                     <Grid
                                         className="airConditionDetails"
                                         item
-                                        size={{ xs: 12, sm: 12, md: 12, lg: 6 }}
+                                        size={{
+                                            xs: 12,
+                                            sm: 12,
+                                            md: 12,
+                                            lg: 6,
+                                        }}
                                     >
                                         <div>
                                             <div
@@ -430,8 +643,10 @@ export default function Weather() {
                                                     alignItems: "center",
                                                 }}
                                             >
-                                                <WbSunnyOutlinedIcon
-                                                    style={{ fontSize: "40px" }}
+                                                <RemoveIcon
+                                                    style={{
+                                                        fontSize: "40px",
+                                                    }}
                                                 />
                                                 <p
                                                     style={{
@@ -439,16 +654,58 @@ export default function Weather() {
                                                         margin: "0 8px",
                                                     }}
                                                 >
-                                                    UV Inside
+                                                    Low Temperature
                                                 </p>
                                             </div>
                                             <div>
                                                 <h2
                                                     style={{
-                                                        textAlign: "center",
+                                                        paddingLeft: "10px",
                                                     }}
                                                 >
-                                                    3
+                                                    {currentWeather.minTemp}°
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </Grid>
+                                    <Grid
+                                        className="airConditionDetails"
+                                        item
+                                        size={{
+                                            xs: 12,
+                                            sm: 12,
+                                            md: 12,
+                                            lg: 6,
+                                        }}
+                                    >
+                                        <div>
+                                            <div
+                                                style={{
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                }}
+                                            >
+                                                <AddIcon
+                                                    style={{
+                                                        fontSize: "40px",
+                                                    }}
+                                                />
+                                                <p
+                                                    style={{
+                                                        fontSize: "20px",
+                                                        margin: "0 8px",
+                                                    }}
+                                                >
+                                                    High Temperature
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h2
+                                                    style={{
+                                                        paddingLeft: "10px",
+                                                    }}
+                                                >
+                                                    {currentWeather.minTemp}°
                                                 </h2>
                                             </div>
                                         </div>
@@ -476,7 +733,7 @@ export default function Weather() {
                                 marginBottom: "10px",
                             }}
                         >
-                            7-day forecast
+                            5-day forecast
                         </p>
                         <div
                             className="todayForecast"
@@ -498,7 +755,7 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Sat</p>
+                                <p>Today</p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -611,62 +868,6 @@ export default function Weather() {
                                 }}
                             >
                                 <p>Wed</p>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "10px",
-                                    }}
-                                >
-                                    <SunnyIcon
-                                        style={{
-                                            width: "50px",
-                                            height: "50px",
-                                        }}
-                                    />
-                                    <p>Sunny</p>
-                                </div>
-                                <p>01-July</p>
-                            </div>
-                            <div
-                                className="days-details"
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    alignItems: "center",
-                                }}
-                            >
-                                <p>Thu</p>
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "10px",
-                                    }}
-                                >
-                                    <SunnyIcon
-                                        style={{
-                                            width: "50px",
-                                            height: "50px",
-                                        }}
-                                    />
-                                    <p>Sunny</p>
-                                </div>
-                                <p>01-July</p>
-                            </div>
-                            <div
-                                className="days-details"
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    alignItems: "center",
-                                }}
-                            >
-                                <p>Fri</p>
                                 <div
                                     style={{
                                         display: "flex",
