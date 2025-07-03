@@ -65,21 +65,63 @@ export default function Weather() {
     //get current location
     useEffect(() => {
         const controller = new AbortController();
-        axios
-            .get("http://ip-api.com/json", {
-                signal: controller.signal,
-            })
-            .then((response) => {
-                let data = response;
-                setLocation({
-                    currentLocation: data.data.city,
-                    currentLat: data.data.lat,
-                    currentLon: data.data.lon,
-                });
-            })
-            .catch((Error) => {
-                console.error(Error);
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    const { latitude, longitude } = position.coords;
+                    try {
+                        const response = await axios.get(
+                            `https://nominatim.openstreetmap.org/reverse`,
+                            {
+                                params: {
+                                    lat: latitude,
+                                    lon: longitude,
+                                    format: "json",
+                                },
+                                headers: {
+                                    "User-Agent":
+                                        "YourWeatherApp/1.0 (your.email@example.com)",
+                                },
+                                signal: controller.signal,
+                            }
+                        );
+                        const data = response.data;
+                        const city =
+                            data.address.city ||
+                            data.address.town ||
+                            data.address.village ||
+                            data.address.county ||
+                            data.address.state ||
+                            data.address.country ||
+                            "Unknown Location";
+                        setLocation({
+                            currentLocation: city,
+                            currentLat: latitude,
+                            currentLon: longitude,
+                        });
+                    } catch {
+                        setLocation({
+                            currentLocation: "Unknown Location",
+                            currentLat: latitude,
+                            currentLon: longitude,
+                        });
+                    }
+                },
+                (error) => {
+                    setLocation({
+                        currentLocation: "Unknown Location",
+                        currentLat: 31.2,
+                        currentLon: 29.9,
+                    });
+                }
+            );
+        } else {
+            setLocation({
+                currentLocation: "Unknown Location",
+                currentLat: 31.2,
+                currentLon: 29.9,
             });
+        }
         return () => {
             controller.abort();
         };
@@ -312,6 +354,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
@@ -348,6 +391,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
@@ -383,6 +427,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
@@ -418,6 +463,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
@@ -453,6 +499,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
@@ -488,6 +535,7 @@ export default function Weather() {
                                                         display: "flex",
                                                         justifyContent:
                                                             "center",
+                                                        border: "none",
                                                     }}
                                                 >
                                                     <div
