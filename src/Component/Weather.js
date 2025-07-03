@@ -192,10 +192,10 @@ export default function Weather() {
                     icon: reIconCode,
                 });
 
-                setWeatherIcon({
-                    ...weatherIcon,
+                setWeatherIcon((prev) => ({
+                    ...prev,
                     mainIcon: TheSwitchWeatherIcon(reIconCode),
-                });
+                }));
             })
             .catch((error) => {
                 console.error(error);
