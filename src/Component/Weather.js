@@ -10,24 +10,16 @@ import AddIcon from "@mui/icons-material/Add";
 import { useContext } from "react";
 import { LightDarkContext } from "../Context/LightDarkContext";
 
-//Weather Icon
-import SunnyIcon from "../Weather Icon/SunnyIcon";
+//moment library
+import moment from "moment/moment";
+import { useEffect, useState } from "react";
 
-//Weather Icon
-
-import React, { useEffect, useState } from "react";
 import TheSwitchWeatherIcon from "../Functions/TheSwitchWeatherIcon";
 //axios library
 import axios from "axios";
 
-export default function Weather() {
+export default function Weather({ location, setLocation }) {
     let { darkTheme } = useContext(LightDarkContext);
-
-    const [location, setLocation] = useState({
-        currentLocation: "",
-        currentLat: "",
-        currentLon: "",
-    });
 
     //current weather
     let [currentWeather, setCurrentWeather] = useState({
@@ -58,7 +50,20 @@ export default function Weather() {
         hourFourIcon: null,
         hourFiveIcon: null,
         hourSixIcon: null,
+        dayOneIcon: null,
+        dayTwoIcon: null,
+        dayThreeIcon: null,
+        dayFourIcon: null,
+        dayFiveIcon: null,
     });
+
+    let [fiveDaysForecast, setFiveDaysForecast] = useState([
+        { temp: "", statue: "", icon: "" },
+        { temp: "", statue: "", icon: "" },
+        { temp: "", statue: "", icon: "" },
+        { temp: "", statue: "", icon: "" },
+        { temp: "", statue: "", icon: "" },
+    ]);
 
     //-------------------------------------------------------------------------------------------------//
     //get APIs
@@ -125,7 +130,7 @@ export default function Weather() {
         return () => {
             controller.abort();
         };
-    }, []);
+    }, [setLocation]);
     //get current location
 
     //get 5-days/3 houre weather API
@@ -140,7 +145,6 @@ export default function Weather() {
                     appid: "6c9c3b62d2d6deeb6af6cfa3d92bd664",
                     units: "metric",
                 },
-                signal: controller.signal,
             })
             .then((response) => {
                 let updateFiveHourForecast = response.data.list
@@ -163,6 +167,17 @@ export default function Weather() {
                     });
                 setForeCastWeather(updateFiveHourForecast);
 
+                let fiveDaysForecast = [];
+                for (let i = 0; i <= 32; i += 8) {
+                    fiveDaysForecast.push(response.data.list[i]);
+                }
+                let fiveDaysForecastUpdate = fiveDaysForecast.map((ele) => {
+                    let temp = ele.main.temp.toFixed(0);
+                    let statue = ele.weather[0].main;
+                    let icon = ele.weather[0].icon;
+                    return { temp, statue, icon };
+                });
+                setFiveDaysForecast(fiveDaysForecastUpdate);
                 if (updateFiveHourForecast[0].icon) {
                     setWeatherIcon((prev) => ({
                         ...prev,
@@ -196,6 +211,21 @@ export default function Weather() {
     }, [location.currentLat, location.currentLon]);
     //get 5-days/3 houre weather API
 
+    //set 5 days icon
+    useEffect(() => {
+        if (fiveDaysForecast[0]?.icon) {
+            setWeatherIcon((prev) => ({
+                ...prev,
+                dayOneIcon: TheSwitchWeatherIcon(fiveDaysForecast[0].icon),
+                dayTwoIcon: TheSwitchWeatherIcon(fiveDaysForecast[1].icon),
+                dayThreeIcon: TheSwitchWeatherIcon(fiveDaysForecast[2].icon),
+                dayFourIcon: TheSwitchWeatherIcon(fiveDaysForecast[3].icon),
+                dayFiveIcon: TheSwitchWeatherIcon(fiveDaysForecast[4].icon),
+            }));
+        }
+    }, [fiveDaysForecast]);
+    //set 5 days icon
+
     //get current  Weather
     useEffect(() => {
         const controller = new AbortController();
@@ -206,20 +236,15 @@ export default function Weather() {
                     lat: location.currentLat,
                     lon: location.currentLon,
                     appid: "6c9c3b62d2d6deeb6af6cfa3d92bd664",
+                    units: "metric",
                 },
                 signal: controller.signal,
             })
             .then((response) => {
-                let resTemp = Math.round(response.data.main.temp - 273.15);
-                let resMaxTemp = Math.round(
-                    response.data.main.temp_max - 273.15
-                );
-                let resMinTemp = Math.round(
-                    response.data.main.temp_min - 273.15
-                );
-                let resRealFeel = Math.round(
-                    response.data.main.feels_like - 273.15
-                );
+                let resTemp = Math.round(response.data.main.temp);
+                let resMaxTemp = Math.round(response.data.main.temp_max);
+                let resMinTemp = Math.round(response.data.main.temp_min);
+                let resRealFeel = Math.round(response.data.main.feels_like);
                 let resWind = Number(
                     (response.data.wind.speed * 3.6).toFixed(1)
                 );
@@ -295,6 +320,17 @@ export default function Weather() {
                                     <div className="location">
                                         <div>
                                             <h1>{location.currentLocation}</h1>
+                                            <p
+                                                style={{
+                                                    fontSize: "14px",
+                                                }}
+                                            >
+                                                {moment().format(
+                                                    "MMMM Do YYYY"
+                                                )}
+                                                {"-"}
+                                                {moment().format("dddd")}
+                                            </p>
                                         </div>
                                         <h1
                                             className="the-temp"
@@ -803,7 +839,14 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Today</p>
+                                <p>
+                                    {
+                                        moment()
+                                            .add(1, "days")
+                                            .calendar()
+                                            .split(" ")[0]
+                                    }
+                                </p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -811,15 +854,20 @@ export default function Weather() {
                                         gap: "10px",
                                     }}
                                 >
-                                    <SunnyIcon
+                                    <div
                                         style={{
                                             width: "50px",
                                             height: "50px",
                                         }}
-                                    />
-                                    <p>Sunny</p>
+                                    >
+                                        {weatherIcon.dayOneIcon}
+                                    </div>
+                                    <div style={{ textAlign: "center" }}>
+                                        <p>{fiveDaysForecast[0].statue}</p>
+                                        <p>{fiveDaysForecast[0].temp}°</p>
+                                    </div>
                                 </div>
-                                <p>01-July</p>
+                                <p>{moment().add(1, "days").format("DD-MM")}</p>
                             </div>
                             <div
                                 className="days-details"
@@ -831,7 +879,14 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Sun</p>
+                                <p>
+                                    {
+                                        moment()
+                                            .add(2, "days")
+                                            .calendar()
+                                            .split(" ")[0]
+                                    }
+                                </p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -839,15 +894,22 @@ export default function Weather() {
                                         gap: "10px",
                                     }}
                                 >
-                                    <SunnyIcon
+                                    <div
                                         style={{
                                             width: "50px",
                                             height: "50px",
                                         }}
-                                    />
-                                    <p>Sunny</p>
+                                    >
+                                        {weatherIcon.dayTwoIcon}
+                                    </div>
+                                    <div style={{ textAlign: "center" }}>
+                                        <div style={{ textAlign: "center" }}>
+                                            <p>{fiveDaysForecast[1].statue}</p>
+                                            <p>{fiveDaysForecast[1].temp}°</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>01-July</p>
+                                <p>{moment().add(2, "days").format("DD-MM")}</p>
                             </div>
                             <div
                                 className="days-details"
@@ -859,7 +921,14 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Mon</p>
+                                <p>
+                                    {
+                                        moment()
+                                            .add(3, "days")
+                                            .calendar()
+                                            .split(" ")[0]
+                                    }
+                                </p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -867,15 +936,22 @@ export default function Weather() {
                                         gap: "10px",
                                     }}
                                 >
-                                    <SunnyIcon
+                                    <div
                                         style={{
                                             width: "50px",
                                             height: "50px",
                                         }}
-                                    />
-                                    <p>Sunny</p>
+                                    >
+                                        {weatherIcon.dayThreeIcon}
+                                    </div>
+                                    <div style={{ textAlign: "center" }}>
+                                        <div style={{ textAlign: "center" }}>
+                                            <p>{fiveDaysForecast[2].statue}</p>
+                                            <p>{fiveDaysForecast[2].temp}°</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>01-July</p>
+                                <p>{moment().add(3, "days").format("DD-MM")}</p>
                             </div>
                             <div
                                 className="days-details"
@@ -887,7 +963,14 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Tue</p>
+                                <p>
+                                    {
+                                        moment()
+                                            .add(4, "days")
+                                            .calendar()
+                                            .split(" ")[0]
+                                    }
+                                </p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -895,15 +978,22 @@ export default function Weather() {
                                         gap: "10px",
                                     }}
                                 >
-                                    <SunnyIcon
+                                    <div
                                         style={{
                                             width: "50px",
                                             height: "50px",
                                         }}
-                                    />
-                                    <p>Sunny</p>
+                                    >
+                                        {weatherIcon.dayThreeIcon}
+                                    </div>
+                                    <div style={{ textAlign: "center" }}>
+                                        <div style={{ textAlign: "center" }}>
+                                            <p>{fiveDaysForecast[2].statue}</p>
+                                            <p>{fiveDaysForecast[2].temp}°</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>01-July</p>
+                                <p>{moment().add(4, "days").format("DD-MM")}</p>
                             </div>
                             <div
                                 className="days-details"
@@ -915,7 +1005,14 @@ export default function Weather() {
                                     alignItems: "center",
                                 }}
                             >
-                                <p>Wed</p>
+                                <p>
+                                    {
+                                        moment()
+                                            .add(5, "days")
+                                            .calendar()
+                                            .split(" ")[0]
+                                    }
+                                </p>
                                 <div
                                     style={{
                                         display: "flex",
@@ -923,15 +1020,22 @@ export default function Weather() {
                                         gap: "10px",
                                     }}
                                 >
-                                    <SunnyIcon
+                                    <div
                                         style={{
                                             width: "50px",
                                             height: "50px",
                                         }}
-                                    />
-                                    <p>Sunny</p>
+                                    >
+                                        {weatherIcon.dayThreeIcon}
+                                    </div>
+                                    <div style={{ textAlign: "center" }}>
+                                        <div style={{ textAlign: "center" }}>
+                                            <p>{fiveDaysForecast[2].statue}</p>
+                                            <p>{fiveDaysForecast[2].temp}°</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>01-July</p>
+                                <p>{moment().add(5, "days").format("DD-MM")}</p>
                             </div>
                         </div>
                     </div>

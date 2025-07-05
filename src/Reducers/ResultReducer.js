@@ -1,7 +1,7 @@
 export default function ResutReducer(currentResult, action) {
     switch (action.type) {
         case "changeTheme": {
-            const theDLTheme = !action.payload;
+            let theDLTheme = !action.payload;
             localStorage.setItem(
                 "LightAndDarkTheme",
                 JSON.stringify(theDLTheme)

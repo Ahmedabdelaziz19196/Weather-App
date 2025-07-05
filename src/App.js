@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import "./App.css";
 import NavBar from "./Component/NavBar";
 import { LightDarkContext } from "./Context/LightDarkContext";
@@ -15,6 +15,13 @@ import Grid from "@mui/material/Grid";
 function App() {
     // let [darkTheme, setDarkTheme] = useState(true);
     let [darkTheme, dispatch] = useReducer(ResutReducer, true);
+
+    const [location, setLocation] = useState({
+        currentCountry: "",
+        currentLocation: "",
+        currentLat: "",
+        currentLon: "",
+    });
 
     // handle dark and light theme
     function handleDarkLightTheme() {
@@ -54,7 +61,7 @@ function App() {
                                     alignItems: "center",
                                     justifyContent: "space-between",
                                     gap: "20px",
-                                    padding: "10px",
+                                    padding: "6px",
                                 }}
                             >
                                 <Grid
@@ -62,7 +69,7 @@ function App() {
                                     size={{ xs: 9, sm: 9, md: 9, lg: 7 }}
                                 >
                                     <div style={{ flex: "1" }}>
-                                        <SearchBar />
+                                        <SearchBar setLocation={setLocation} />
                                     </div>
                                 </Grid>
                                 <Grid
@@ -80,7 +87,15 @@ function App() {
                         </Grid>
                         <Grid size={12}>
                             <Routes>
-                                <Route path="/" element={<Weather />} />
+                                <Route
+                                    path="/"
+                                    element={
+                                        <Weather
+                                            location={location}
+                                            setLocation={setLocation}
+                                        />
+                                    }
+                                />
                                 <Route path="/map" element={<Map />} />
                                 <Route path="/athan" element={<Athan />} />
                             </Routes>

@@ -18,18 +18,23 @@ export default function NavBar() {
             style={{ paddingTop: "20px", textAlign: "center" }}
         >
             <Stack sx={{ alignItems: "center", position: "sticky", top: 20 }}>
-                <div>
-                    <img
-                        src={
-                            darkTheme
-                                ? require("../img/lightlogo.png")
-                                : require("../img/darklogo.png")
-                        }
-                        alt="logo"
-                        className="logo"
-                        style={{ marginBottom: "20px" }}
-                    />
-                </div>
+                <Link
+                    to="/"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                >
+                    <div>
+                        <img
+                            src={
+                                darkTheme
+                                    ? require("../img/lightlogo.png")
+                                    : require("../img/darklogo.png")
+                            }
+                            alt="logo"
+                            className="logo"
+                            style={{ marginBottom: "20px" }}
+                        />
+                    </div>
+                </Link>
                 <Link
                     to="/"
                     className="nav-icon"

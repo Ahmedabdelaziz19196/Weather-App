@@ -1,4 +1,4 @@
-const RainyNight = ({ style = {} }) => {
+const RainyDay = ({ style = {} }) => {
     return (
         <svg
             style={style}
@@ -27,7 +27,13 @@ const RainyNight = ({ style = {} }) => {
                     0% { stroke-dashoffset: 0; }
                     100% { stroke-dashoffset: -100; }
                 }
-
+            @keyframes am-weather-sun {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            .am-weather-sun {
+              animation: am-weather-sun 9s linear infinite;
+            }
                 .moon {
                     animation: am-weather-moon 6s linear infinite;
                     transform-origin: 12.5px 15.15px;
@@ -53,30 +59,31 @@ const RainyNight = ({ style = {} }) => {
                     animation: am-weather-rain 8s linear infinite;
                     animation-delay: 0.25s;
                 }
+                    
             `}
             </style>
 
             {/* 🌙 الهلال */}
-            <g transform="translate(-20, -20)">
-                <g className="moon" transform="scale(0.8)">
-                    <path
-                        d="M14.5 13.2c0-3.7 2-6.9 5-8.7 -1.5-0.9-3.2-1.3-5-1.3 -5.5 0-10 4.5-10 10s4.5 10 10 10c1.8 0 3.5-0.5 5-1.3 -3-1.7-5-5-5-8.7z"
-                        fill="#f4d942"
-                        stroke="#f4d942"
-                        strokeLinejoin="round"
+            <g transform="translate(-10, -10)">
+                {/* الشمس */}
+                <g className="am-weather-sun">
+                    {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => (
+                        <g key={deg} transform={`rotate(${deg})`}>
+                            <line
+                                transform="translate(0,9)"
+                                y2="3"
+                                fill="none"
+                                stroke="#ffa500"
+                                strokeLinecap="round"
+                                strokeWidth="2"
+                            />
+                        </g>
+                    ))}
+                    <circle
+                        r="5"
+                        fill="#ffa500"
+                        stroke="#ffa500"
                         strokeWidth="2"
-                    />
-                    <polygon
-                        className="moon-star-1"
-                        points="4 4 3.3 5.2 2.7 4 1.5 3.3 2.7 2.7 3.3 1.5 4 2.7 5.2 3.3"
-                        fill="#f4d942"
-                        transform="translate(-4, -5)"
-                    />
-                    <polygon
-                        className="moon-star-2"
-                        points="4 4 3.3 5.2 2.7 4 1.5 3.3 2.7 2.7 3.3 1.5 4 2.7 5.2 3.3"
-                        fill="#f4d942"
-                        transform="translate(10, -3)"
                     />
                 </g>
             </g>
@@ -130,4 +137,4 @@ const RainyNight = ({ style = {} }) => {
     );
 };
 
-export default RainyNight;
+export default RainyDay;
