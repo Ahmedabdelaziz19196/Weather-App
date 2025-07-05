@@ -343,13 +343,21 @@ export default function Weather({ location, setLocation }) {
                                         </h1>
                                     </div>
                                     <div
-                                        className="weather-icon"
                                         style={{
-                                            width: "200px",
-                                            height: "200px",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            marginBott: "10px",
                                         }}
                                     >
-                                        {weatherIcon.mainIcon}
+                                        <div
+                                            className="weather-icon"
+                                            style={{
+                                                width: "200px",
+                                                height: "200px",
+                                            }}
+                                        >
+                                            {weatherIcon.mainIcon}
+                                        </div>
                                     </div>
                                 </div>
 

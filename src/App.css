@@ -86,3 +86,9 @@ body {
     font-weight: 900;
     font-style: normal;
 }
+
+@media (max-width: 768px) {
+    .searchBar {
+        margin-top: 65px;
+    }
+}

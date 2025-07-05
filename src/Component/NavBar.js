@@ -15,9 +15,19 @@ export default function NavBar() {
         <div
             className="nav-bar"
             data-theme={darkTheme ? "dark" : "light"}
-            style={{ paddingTop: "20px", textAlign: "center" }}
+            style={{
+                paddingTop: "20px",
+                textAlign: "center",
+            }}
         >
-            <Stack sx={{ alignItems: "center", position: "sticky", top: 20 }}>
+            <Stack
+                sx={{
+                    alignItems: "center",
+                    position: "sticky",
+                    top: 20,
+                }}
+                className="theNavIcons"
+            >
                 <Link
                     to="/"
                     style={{ textDecoration: "none", color: "inherit" }}

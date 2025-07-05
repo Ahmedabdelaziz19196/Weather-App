@@ -50,10 +50,10 @@ function App() {
                 data-theme={darkTheme ? "dark" : "light"}
             >
                 <Grid container spacing={2} style={{ minHeight: "100vh" }}>
-                    <Grid item size={{ xs: 2, sm: 2, md: 2, lg: 1 }}>
+                    <Grid item size={{ xs: 12, sm: 12, md: 2, lg: 1 }}>
                         <NavBar />
                     </Grid>
-                    <Grid item size={{ xs: 10, sm: 10, md: 10, lg: 11 }}>
+                    <Grid item size={{ xs: 12, sm: 12, md: 10, lg: 11 }}>
                         <Grid size={12}>
                             <div
                                 style={{
@@ -63,6 +63,7 @@ function App() {
                                     gap: "20px",
                                     padding: "6px",
                                 }}
+                                className="searchBar"
                             >
                                 <Grid
                                     item

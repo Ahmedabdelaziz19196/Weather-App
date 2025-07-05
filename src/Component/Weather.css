@@ -19,10 +19,12 @@ h6 {
         justify-content: space-between;
         width: 100%;
     }
-    .airCondition[data-airCondition="dark"] .airConditionDetails {
+    .airCondition[data-airCondition="dark"]
+        .airConditionDetails:not(:last-child) {
         border-bottom: 1px solid var(--main-dark-background);
     }
-    .airCondition[data-airCondition="light"] .airConditionDetails {
+    .airCondition[data-airCondition="light"]
+        .airConditionDetails:not(:last-child) {
         border-bottom: 1px solid var(--main-light-background);
     }
     .airCondition[data-airCondition="dark"] .airConditionDetails:last-child {
