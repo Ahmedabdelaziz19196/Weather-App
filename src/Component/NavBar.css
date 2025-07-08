@@ -24,6 +24,10 @@
     width: 70%;
     padding: 10px;
     border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 [data-theme="dark"] .nav-icon:hover {
     background-color: var(--main-dark-background);
@@ -40,11 +44,12 @@
         width: 100%;
         height: fit-content;
         z-index: 1000;
-        padding-top: 10px;
+        padding: 15px 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     }
-    .nav-text {
-        display: none;
+    .nav-text,
+    .nav-text-two {
+        display: none !important;
     }
 
     .nav-icon-img {
@@ -55,6 +60,9 @@
     .nav-icon {
         padding: 8px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .the-icon {
         width: 30px !important;
@@ -68,4 +76,11 @@
         display: flex !important;
         flex-direction: row !important;
     }
+    .the-list {
+        width: 250px !important;
+    }
+}
+
+.format {
+    margin-bottom: 20px;
 }

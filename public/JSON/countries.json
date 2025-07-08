@@ -1,0 +1,2156 @@
+[
+    {
+        "country": "AF",
+        "country_name": "Afghanistan",
+        "cities": [
+            { "name": "Kabul", "lat": 34.5553, "lon": 69.2075 },
+            { "name": "Herat", "lat": 34.352, "lon": 62.2027 },
+            { "name": "Mazar-i-Sharif", "lat": 36.709, "lon": 67.1107 },
+            { "name": "Kandahar", "lat": 31.6133, "lon": 65.7097 },
+            { "name": "Jalalabad", "lat": 34.4268, "lon": 70.4515 }
+        ]
+    },
+    {
+        "country": "AL",
+        "country_name": "Albania",
+        "cities": [
+            { "name": "Tirana", "lat": 41.3275, "lon": 19.8187 },
+            { "name": "Durrës", "lat": 41.3236, "lon": 19.454 },
+            { "name": "Vlorë", "lat": 40.466, "lon": 19.4897 },
+            { "name": "Shkodër", "lat": 42.0682, "lon": 19.5152 },
+            { "name": "Fier", "lat": 40.7239, "lon": 19.5551 }
+        ]
+    },
+    {
+        "country": "DZ",
+        "country_name": "Algeria",
+        "cities": [
+            { "name": "Algiers", "lat": 36.7538, "lon": 3.0588 },
+            { "name": "Oran", "lat": 35.6979, "lon": -0.6417 },
+            { "name": "Constantine", "lat": 36.3641, "lon": 6.6146 },
+            { "name": "Annaba", "lat": 36.9031, "lon": 7.755 },
+            { "name": "Blida", "lat": 36.4703, "lon": 2.8307 }
+        ]
+    },
+    {
+        "country": "AS",
+        "country_name": "American Samoa",
+        "cities": [
+            { "name": "Pago Pago", "lat": -14.2781, "lon": -170.7024 },
+            { "name": "Tafuna", "lat": -14.3356, "lon": -170.7203 },
+            { "name": "Nu'uuli", "lat": -14.3167, "lon": -170.7333 },
+            { "name": "Fagatogo", "lat": -14.2833, "lon": -170.6833 },
+            { "name": "Leone", "lat": -14.3431, "lon": -170.7861 }
+        ]
+    },
+    {
+        "country": "AD",
+        "country_name": "Andorra",
+        "cities": [
+            { "name": "Andorra la Vella", "lat": 42.5075, "lon": 1.5218 },
+            { "name": "Escaldes-Engordany", "lat": 42.51, "lon": 1.535 },
+            { "name": "Encamp", "lat": 42.5348, "lon": 1.5801 },
+            { "name": "Sant Julià de Lòria", "lat": 42.4647, "lon": 1.4913 },
+            { "name": "La Massana", "lat": 42.5459, "lon": 1.5148 }
+        ]
+    },
+    {
+        "country": "AO",
+        "country_name": "Angola",
+        "cities": [
+            { "name": "Luanda", "lat": -8.8383, "lon": 13.2344 },
+            { "name": "Huambo", "lat": -12.7763, "lon": 15.7392 },
+            { "name": "Lobito", "lat": -12.3483, "lon": 13.5483 },
+            { "name": "Benguela", "lat": -12.5784, "lon": 13.4053 },
+            { "name": "Kuito", "lat": -12.3833, "lon": 16.9333 }
+        ]
+    },
+    {
+        "country": "AG",
+        "country_name": "Antigua and Barbuda",
+        "cities": [
+            { "name": "Saint John's", "lat": 17.1167, "lon": -61.85 },
+            { "name": "All Saints", "lat": 17.0667, "lon": -61.8 },
+            { "name": "Liberta", "lat": 17.0333, "lon": -61.8333 },
+            { "name": "Potters Village", "lat": 17.0833, "lon": -61.8333 },
+            { "name": "Bolands", "lat": 17.0667, "lon": -61.8833 }
+        ]
+    },
+    {
+        "country": "AR",
+        "country_name": "Argentina",
+        "cities": [
+            { "name": "Buenos Aires", "lat": -34.6037, "lon": -58.3816 },
+            { "name": "Córdoba", "lat": -31.4201, "lon": -64.1888 },
+            { "name": "Rosario", "lat": -32.9468, "lon": -60.6393 },
+            { "name": "Mendoza", "lat": -32.8895, "lon": -68.8458 },
+            {
+                "name": "San Miguel de Tucumán",
+                "lat": -26.8241,
+                "lon": -65.2226
+            }
+        ]
+    },
+    {
+        "country": "AM",
+        "country_name": "Armenia",
+        "cities": [
+            { "name": "Yerevan", "lat": 40.1872, "lon": 44.5152 },
+            { "name": "Gyumri", "lat": 40.7942, "lon": 43.8453 },
+            { "name": "Vanadzor", "lat": 40.8031, "lon": 44.4958 },
+            { "name": "Vagharshapat", "lat": 40.1667, "lon": 44.2944 },
+            { "name": "Hrazdan", "lat": 40.5, "lon": 44.7667 }
+        ]
+    },
+    {
+        "country": "AU",
+        "country_name": "Australia",
+        "cities": [
+            { "name": "Sydney", "lat": -33.8688, "lon": 151.2093 },
+            { "name": "Melbourne", "lat": -37.8136, "lon": 144.9631 },
+            { "name": "Brisbane", "lat": -27.4698, "lon": 153.0251 },
+            { "name": "Perth", "lat": -31.9505, "lon": 115.8605 },
+            { "name": "Adelaide", "lat": -34.9285, "lon": 138.6007 }
+        ]
+    },
+    {
+        "country": "AT",
+        "country_name": "Austria",
+        "cities": [
+            { "name": "Vienna", "lat": 48.2082, "lon": 16.3738 },
+            { "name": "Graz", "lat": 47.0707, "lon": 15.4395 },
+            { "name": "Linz", "lat": 48.3069, "lon": 14.2858 },
+            { "name": "Salzburg", "lat": 47.8095, "lon": 13.055 },
+            { "name": "Innsbruck", "lat": 47.2692, "lon": 11.4041 }
+        ]
+    },
+    {
+        "country": "AZ",
+        "country_name": "Azerbaijan",
+        "cities": [
+            { "name": "Baku", "lat": 40.4093, "lon": 49.8671 },
+            { "name": "Ganja", "lat": 40.6828, "lon": 46.3606 },
+            { "name": "Sumqayit", "lat": 40.5897, "lon": 49.6686 },
+            { "name": "Mingachevir", "lat": 40.7706, "lon": 47.049 },
+            { "name": "Shaki", "lat": 41.1833, "lon": 47.1667 }
+        ]
+    },
+    {
+        "country": "BS",
+        "country_name": "Bahamas",
+        "cities": [
+            { "name": "Nassau", "lat": 25.0343, "lon": -77.3963 },
+            { "name": "Freeport", "lat": 26.5333, "lon": -78.7 },
+            { "name": "West End", "lat": 26.6872, "lon": -78.9744 },
+            { "name": "Coopers Town", "lat": 26.867, "lon": -77.51 },
+            { "name": "Marsh Harbour", "lat": 26.5412, "lon": -77.0636 }
+        ]
+    },
+    {
+        "country": "BH",
+        "country_name": "Bahrain",
+        "cities": [
+            { "name": "Manama", "lat": 26.2237, "lon": 50.586 },
+            { "name": "Riffa", "lat": 26.131, "lon": 50.555 },
+            { "name": "Muharraq", "lat": 26.2572, "lon": 50.6139 },
+            { "name": "Hamad Town", "lat": 26.1167, "lon": 50.5 },
+            { "name": "Isa Town", "lat": 26.1736, "lon": 50.55 }
+        ]
+    },
+    {
+        "country": "BD",
+        "country_name": "Bangladesh",
+        "cities": [
+            { "name": "Dhaka", "lat": 23.8103, "lon": 90.4125 },
+            { "name": "Chittagong", "lat": 22.3569, "lon": 91.7832 },
+            { "name": "Khulna", "lat": 22.8457, "lon": 89.5406 },
+            { "name": "Sylhet", "lat": 24.8949, "lon": 91.8687 },
+            { "name": "Rajshahi", "lat": 24.3745, "lon": 88.6042 }
+        ]
+    },
+    {
+        "country": "BB",
+        "country_name": "Barbados",
+        "cities": [
+            { "name": "Bridgetown", "lat": 13.097, "lon": -59.616 },
+            { "name": "Speightstown", "lat": 13.25, "lon": -59.65 },
+            { "name": "Oistins", "lat": 13.07, "lon": -59.53 },
+            { "name": "Holetown", "lat": 13.1833, "lon": -59.6333 },
+            { "name": "Bathsheba", "lat": 13.2, "lon": -59.5167 }
+        ]
+    },
+    {
+        "country": "BY",
+        "country_name": "Belarus",
+        "cities": [
+            { "name": "Minsk", "lat": 53.9, "lon": 27.5667 },
+            { "name": "Gomel", "lat": 52.4345, "lon": 30.9754 },
+            { "name": "Mogilev", "lat": 53.8981, "lon": 30.3328 },
+            { "name": "Vitebsk", "lat": 55.1904, "lon": 30.2049 },
+            { "name": "Grodno", "lat": 53.6884, "lon": 23.8256 }
+        ]
+    },
+    {
+        "country": "BE",
+        "country_name": "Belgium",
+        "cities": [
+            { "name": "Brussels", "lat": 50.8503, "lon": 4.3517 },
+            { "name": "Antwerp", "lat": 51.2194, "lon": 4.4025 },
+            { "name": "Ghent", "lat": 51.0543, "lon": 3.7174 },
+            { "name": "Charleroi", "lat": 50.4111, "lon": 4.4445 },
+            { "name": "Liège", "lat": 50.6337, "lon": 5.5675 }
+        ]
+    },
+    {
+        "country": "BZ",
+        "country_name": "Belize",
+        "cities": [
+            { "name": "Belmopan", "lat": 17.251, "lon": -88.7591 },
+            { "name": "Belize City", "lat": 17.4983, "lon": -88.1976 },
+            { "name": "San Ignacio", "lat": 17.1589, "lon": -89.0697 },
+            { "name": "Orange Walk Town", "lat": 18.0778, "lon": -88.5633 },
+            { "name": "Dangriga", "lat": 16.9683, "lon": -88.2333 }
+        ]
+    },
+    {
+        "country": "BJ",
+        "country_name": "Benin",
+        "cities": [
+            { "name": "Porto-Novo", "lat": 6.4968, "lon": 2.6037 },
+            { "name": "Cotonou", "lat": 6.3703, "lon": 2.4547 },
+            { "name": "Abomey", "lat": 7.1833, "lon": 1.9833 },
+            { "name": "Parakou", "lat": 9.3372, "lon": 2.6303 },
+            { "name": "Bohicon", "lat": 7.1667, "lon": 2.0667 }
+        ]
+    },
+    {
+        "country": "BT",
+        "country_name": "Bhutan",
+        "cities": [
+            { "name": "Thimphu", "lat": 27.471, "lon": 89.6336 },
+            { "name": "Phuntsholing", "lat": 26.8528, "lon": 89.3885 },
+            { "name": "Punakha", "lat": 27.59, "lon": 89.88 },
+            { "name": "Paro", "lat": 27.43, "lon": 89.41 },
+            { "name": "Jakar", "lat": 27.55, "lon": 90.75 }
+        ]
+    },
+    {
+        "country": "BO",
+        "country_name": "Bolivia",
+        "cities": [
+            { "name": "La Paz", "lat": -16.5, "lon": -68.15 },
+            {
+                "name": "Santa Cruz de la Sierra",
+                "lat": -17.7833,
+                "lon": -63.182
+            },
+            { "name": "Cochabamba", "lat": -17.3895, "lon": -66.1567 },
+            { "name": "Sucre", "lat": -19.0437, "lon": -65.2591 },
+            { "name": "Oruro", "lat": -17.9833, "lon": -67.1167 }
+        ]
+    },
+    {
+        "country": "BA",
+        "country_name": "Bosnia and Herzegovina",
+        "cities": [
+            { "name": "Sarajevo", "lat": 43.8563, "lon": 18.4131 },
+            { "name": "Banja Luka", "lat": 44.775, "lon": 17.19 },
+            { "name": "Tuzla", "lat": 44.5384, "lon": 18.6941 },
+            { "name": "Zenica", "lat": 44.2017, "lon": 17.9042 },
+            { "name": "Mostar", "lat": 43.3433, "lon": 17.8016 }
+        ]
+    },
+    {
+        "country": "BW",
+        "country_name": "Botswana",
+        "cities": [
+            { "name": "Gaborone", "lat": -24.6282, "lon": 25.9231 },
+            { "name": "Francistown", "lat": -21.17, "lon": 27.5078 },
+            { "name": "Molepolole", "lat": -24.4067, "lon": 25.4978 },
+            { "name": "Serowe", "lat": -22.3833, "lon": 26.7167 },
+            { "name": "Mahalapye", "lat": -23.1, "lon": 26.8 }
+        ]
+    },
+    {
+        "country": "BR",
+        "country_name": "Brazil",
+        "cities": [
+            { "name": "São Paulo", "lat": -23.5505, "lon": -46.6333 },
+            { "name": "Rio de Janeiro", "lat": -22.9068, "lon": -43.1729 },
+            { "name": "Brasília", "lat": -15.7942, "lon": -47.8825 },
+            { "name": "Salvador", "lat": -12.9703, "lon": -38.5108 },
+            { "name": "Fortaleza", "lat": -3.7172, "lon": -38.5433 }
+        ]
+    },
+    {
+        "country": "BN",
+        "country_name": "Brunei",
+        "cities": [
+            { "name": "Bandar Seri Begawan", "lat": 4.8903, "lon": 114.9401 },
+            { "name": "Kuala Belait", "lat": 4.5833, "lon": 114.2333 },
+            { "name": "Seria", "lat": 4.61, "lon": 114.3247 },
+            { "name": "Tutong", "lat": 4.8, "lon": 114.65 },
+            { "name": "Bangar", "lat": 4.7, "lon": 115.0667 }
+        ]
+    },
+    {
+        "country": "BG",
+        "country_name": "Bulgaria",
+        "cities": [
+            { "name": "Sofia", "lat": 42.6977, "lon": 23.3219 },
+            { "name": "Plovdiv", "lat": 42.1354, "lon": 24.7453 },
+            { "name": "Varna", "lat": 43.2141, "lon": 27.9093 },
+            { "name": "Burgas", "lat": 42.5047, "lon": 27.4625 },
+            { "name": "Ruse", "lat": 43.8564, "lon": 25.9655 }
+        ]
+    },
+    {
+        "country": "BF",
+        "country_name": "Burkina Faso",
+        "cities": [
+            { "name": "Ouagadougou", "lat": 12.3714, "lon": -1.5197 },
+            { "name": "Bobo-Dioulasso", "lat": 11.1772, "lon": -4.2979 },
+            { "name": "Koudougou", "lat": 12.2526, "lon": -2.3626 },
+            { "name": "Banfora", "lat": 10.6333, "lon": -4.75 },
+            { "name": "Dédougou", "lat": 12.4667, "lon": -3.4667 }
+        ]
+    },
+    {
+        "country": "BI",
+        "country_name": "Burundi",
+        "cities": [
+            { "name": "Gitega", "lat": -3.4274, "lon": 29.9246 },
+            { "name": "Bujumbura", "lat": -3.3614, "lon": 29.3599 },
+            { "name": "Ngozi", "lat": -2.907, "lon": 29.831 },
+            { "name": "Rumonge", "lat": -3.975, "lon": 29.4417 },
+            { "name": "Muyinga", "lat": -2.8478, "lon": 30.3383 }
+        ]
+    },
+    {
+        "country": "KH",
+        "country_name": "Cambodia",
+        "cities": [
+            { "name": "Phnom Penh", "lat": 11.5564, "lon": 104.9282 },
+            { "name": "Siem Reap", "lat": 13.3667, "lon": 103.8667 },
+            { "name": "Battambang", "lat": 13.1028, "lon": 103.1983 },
+            { "name": "Sihanoukville", "lat": 10.6099, "lon": 103.5296 },
+            { "name": "Poipet", "lat": 13.656, "lon": 102.563 }
+        ]
+    },
+    {
+        "country": "CM",
+        "country_name": "Cameroon",
+        "cities": [
+            { "name": "Yaoundé", "lat": 3.848, "lon": 11.5021 },
+            { "name": "Douala", "lat": 4.0483, "lon": 9.7043 },
+            { "name": "Bamenda", "lat": 5.9597, "lon": 10.1461 },
+            { "name": "Buea", "lat": 4.1533, "lon": 9.2346 },
+            { "name": "Garoua", "lat": 9.3, "lon": 13.4 }
+        ]
+    },
+    {
+        "country": "CA",
+        "country_name": "Canada",
+        "cities": [
+            { "name": "Toronto", "lat": 43.651, "lon": -79.347 },
+            { "name": "Montreal", "lat": 45.5017, "lon": -73.5673 },
+            { "name": "Vancouver", "lat": 49.2827, "lon": -123.1207 },
+            { "name": "Calgary", "lat": 51.0447, "lon": -114.0719 },
+            { "name": "Ottawa", "lat": 45.4215, "lon": -75.6972 }
+        ]
+    },
+    {
+        "country": "CV",
+        "country_name": "Cape Verde",
+        "cities": [
+            { "name": "Praia", "lat": 14.9333, "lon": -23.5133 },
+            { "name": "Mindelo", "lat": 16.89, "lon": -24.98 },
+            { "name": "Assomada", "lat": 15.1, "lon": -23.6833 },
+            { "name": "São Filipe", "lat": 14.9, "lon": -24.5 },
+            { "name": "Porto Novo", "lat": 17.0197, "lon": -25.0647 }
+        ]
+    },
+    {
+        "country": "CF",
+        "country_name": "Central African Republic",
+        "cities": [
+            { "name": "Bangui", "lat": 4.3621, "lon": 18.555 },
+            { "name": "Bimbo", "lat": 4.2569, "lon": 18.4158 },
+            { "name": "Berbérati", "lat": 4.2611, "lon": 15.7922 },
+            { "name": "Carnot", "lat": 4.94, "lon": 15.87 },
+            { "name": "Bozoum", "lat": 6.3167, "lon": 16.3833 }
+        ]
+    },
+    {
+        "country": "TD",
+        "country_name": "Chad",
+        "cities": [
+            { "name": "N'Djamena", "lat": 12.11, "lon": 15.0433 },
+            { "name": "Moundou", "lat": 8.5667, "lon": 16.0833 },
+            { "name": "Sarh", "lat": 9.15, "lon": 18.3833 },
+            { "name": "Abéché", "lat": 13.8292, "lon": 20.8314 },
+            { "name": "Koumra", "lat": 8.9167, "lon": 17.55 }
+        ]
+    },
+    {
+        "country": "CL",
+        "country_name": "Chile",
+        "cities": [
+            { "name": "Santiago", "lat": -33.4489, "lon": -70.6693 },
+            { "name": "Valparaíso", "lat": -33.0472, "lon": -71.6127 },
+            { "name": "Concepción", "lat": -36.8269, "lon": -73.0498 },
+            { "name": "La Serena", "lat": -29.9046, "lon": -71.2488 },
+            { "name": "Antofagasta", "lat": -23.65, "lon": -70.4 }
+        ]
+    },
+    {
+        "country": "CN",
+        "country_name": "China",
+        "cities": [
+            { "name": "Beijing", "lat": 39.9042, "lon": 116.4074 },
+            { "name": "Shanghai", "lat": 31.2304, "lon": 121.4737 },
+            { "name": "Guangzhou", "lat": 23.1291, "lon": 113.2644 },
+            { "name": "Shenzhen", "lat": 22.5431, "lon": 114.0579 },
+            { "name": "Chongqing", "lat": 29.5628, "lon": 106.5528 }
+        ]
+    },
+    {
+        "country": "CO",
+        "country_name": "Colombia",
+        "cities": [
+            { "name": "Bogotá", "lat": 4.711, "lon": -74.0721 },
+            { "name": "Medellín", "lat": 6.2442, "lon": -75.5735 },
+            { "name": "Cali", "lat": 3.4372, "lon": -76.5225 },
+            { "name": "Barranquilla", "lat": 10.9639, "lon": -74.7964 },
+            { "name": "Cartagena", "lat": 10.3997, "lon": -75.5144 }
+        ]
+    },
+    {
+        "country": "KM",
+        "country_name": "Comoros",
+        "cities": [
+            { "name": "Moroni", "lat": -11.7022, "lon": 43.2551 },
+            { "name": "Mutsamudu", "lat": -12.1667, "lon": 44.4333 },
+            { "name": "Fomboni", "lat": -12.28, "lon": 43.7422 },
+            { "name": "Domoni", "lat": -12.2667, "lon": 44.5333 },
+            { "name": "Ouani", "lat": -12.1333, "lon": 44.4167 }
+        ]
+    },
+    {
+        "country": "CG",
+        "country_name": "Congo",
+        "cities": [
+            { "name": "Brazzaville", "lat": -4.2592, "lon": 15.2847 },
+            { "name": "Pointe-Noire", "lat": -4.7697, "lon": 11.8638 },
+            { "name": "Dolisie", "lat": -4.2033, "lon": 12.6667 },
+            { "name": "Kayes", "lat": -4.2, "lon": 13.4833 },
+            { "name": "Owando", "lat": -0.4833, "lon": 15.9 }
+        ]
+    },
+    {
+        "country": "CD",
+        "country_name": "Congo, Democratic Republic of the",
+        "cities": [
+            { "name": "Kinshasa", "lat": -4.4419, "lon": 15.2663 },
+            { "name": "Lubumbashi", "lat": -11.6609, "lon": 27.4794 },
+            { "name": "Mbuji-Mayi", "lat": -6.136, "lon": 23.5898 },
+            { "name": "Kisangani", "lat": 0.5167, "lon": 25.2 },
+            { "name": "Bukavu", "lat": -2.4908, "lon": 28.845 }
+        ]
+    },
+    {
+        "country": "CR",
+        "country_name": "Costa Rica",
+        "cities": [
+            { "name": "San José", "lat": 9.9281, "lon": -84.0907 },
+            { "name": "Alajuela", "lat": 10.0167, "lon": -84.2167 },
+            { "name": "Cartago", "lat": 9.8648, "lon": -83.9191 },
+            { "name": "Puntarenas", "lat": 9.975, "lon": -84.8333 },
+            { "name": "Limon", "lat": 9.9908, "lon": -83.0333 }
+        ]
+    },
+    {
+        "country": "CI",
+        "country_name": "Côte d'Ivoire",
+        "cities": [
+            { "name": "Yamoussoukro", "lat": 6.82, "lon": -5.2767 },
+            { "name": "Abidjan", "lat": 5.3599, "lon": -4.0083 },
+            { "name": "Bouaké", "lat": 7.6938, "lon": -5.0303 },
+            { "name": "Daloa", "lat": 6.8833, "lon": -6.45 },
+            { "name": "San-Pédro", "lat": 4.7486, "lon": -6.6361 }
+        ]
+    },
+    {
+        "country": "HR",
+        "country_name": "Croatia",
+        "cities": [
+            { "name": "Zagreb", "lat": 45.815, "lon": 15.9819 },
+            { "name": "Split", "lat": 43.5081, "lon": 16.4402 },
+            { "name": "Rijeka", "lat": 45.3271, "lon": 14.442 },
+            { "name": "Osijek", "lat": 45.5511, "lon": 18.6955 },
+            { "name": "Zadar", "lat": 44.1197, "lon": 15.2314 }
+        ]
+    },
+    {
+        "country": "CU",
+        "country_name": "Cuba",
+        "cities": [
+            { "name": "Havana", "lat": 23.1136, "lon": -82.3666 },
+            { "name": "Santiago de Cuba", "lat": 20.0208, "lon": -75.8267 },
+            { "name": "Camagüey", "lat": 21.3808, "lon": -77.9173 },
+            { "name": "Holguín", "lat": 20.8873, "lon": -76.263 },
+            { "name": "Guantánamo", "lat": 20.1444, "lon": -75.2092 }
+        ]
+    },
+    {
+        "country": "CY",
+        "country_name": "Cyprus",
+        "cities": [
+            { "name": "Nicosia", "lat": 35.1856, "lon": 33.3823 },
+            { "name": "Limassol", "lat": 34.6833, "lon": 33.0333 },
+            { "name": "Larnaca", "lat": 34.9229, "lon": 33.6233 },
+            { "name": "Paphos", "lat": 34.7569, "lon": 32.428 },
+            { "name": "Famagusta", "lat": 35.125, "lon": 33.9375 }
+        ]
+    },
+    {
+        "country": "CZ",
+        "country_name": "Czechia",
+        "cities": [
+            { "name": "Prague", "lat": 50.0755, "lon": 14.4378 },
+            { "name": "Brno", "lat": 49.1951, "lon": 16.6068 },
+            { "name": "Ostrava", "lat": 49.8209, "lon": 18.2625 },
+            { "name": "Plzeň", "lat": 49.7475, "lon": 13.3776 },
+            { "name": "Liberec", "lat": 50.7671, "lon": 15.0561 }
+        ]
+    },
+    {
+        "country": "DK",
+        "country_name": "Denmark",
+        "cities": [
+            { "name": "Copenhagen", "lat": 55.6761, "lon": 12.5683 },
+            { "name": "Aarhus", "lat": 56.1629, "lon": 10.2039 },
+            { "name": "Odense", "lat": 55.3959, "lon": 10.3883 },
+            { "name": "Aalborg", "lat": 57.0488, "lon": 9.9187 },
+            { "name": "Esbjerg", "lat": 55.4704, "lon": 8.4511 }
+        ]
+    },
+    {
+        "country": "DJ",
+        "country_name": "Djibouti",
+        "cities": [
+            { "name": "Djibouti", "lat": 11.8251, "lon": 42.5903 },
+            { "name": "Ali Sabieh", "lat": 11.1558, "lon": 42.7125 },
+            { "name": "Dikhil", "lat": 11.1064, "lon": 42.3678 },
+            { "name": "Tadjoura", "lat": 11.7833, "lon": 42.8833 },
+            { "name": "Obock", "lat": 11.9667, "lon": 43.2833 }
+        ]
+    },
+    {
+        "country": "DM",
+        "country_name": "Dominica",
+        "cities": [
+            { "name": "Roseau", "lat": 15.3017, "lon": -61.3881 },
+            { "name": "Portsmouth", "lat": 15.5833, "lon": -61.45 },
+            { "name": "Marigot", "lat": 15.5333, "lon": -61.3167 },
+            { "name": "La Plaine", "lat": 15.3333, "lon": -61.2333 },
+            { "name": "Berekua", "lat": 15.2333, "lon": -61.3167 }
+        ]
+    },
+    {
+        "country": "DO",
+        "country_name": "Dominican Republic",
+        "cities": [
+            { "name": "Santo Domingo", "lat": 18.4861, "lon": -69.9312 },
+            {
+                "name": "Santiago de los Caballeros",
+                "lat": 19.4527,
+                "lon": -70.6926
+            },
+            {
+                "name": "San Juan de la Maguana",
+                "lat": 18.8083,
+                "lon": -71.2306
+            },
+            { "name": "La Romana", "lat": 18.4273, "lon": -68.9728 },
+            { "name": "San Pedro de Macorís", "lat": 18.45, "lon": -69.3 }
+        ]
+    },
+    {
+        "country": "EC",
+        "country_name": "Ecuador",
+        "cities": [
+            { "name": "Quito", "lat": -0.1807, "lon": -78.4678 },
+            { "name": "Guayaquil", "lat": -2.17, "lon": -79.9224 },
+            { "name": "Cuenca", "lat": -2.9, "lon": -79.0 },
+            { "name": "Santo Domingo", "lat": -0.2532, "lon": -79.1667 },
+            { "name": "Machala", "lat": -3.2583, "lon": -79.9556 }
+        ]
+    },
+    {
+        "country": "EG",
+        "country_name": "Egypt",
+        "cities": [
+            { "name": "Cairo", "lat": 30.0444, "lon": 31.2357 },
+            { "name": "Alexandria", "lat": 31.2001, "lon": 29.9187 },
+            { "name": "Giza", "lat": 30.0131, "lon": 31.2089 },
+            { "name": "Shubra El Kheima", "lat": 30.123, "lon": 31.2505 },
+            { "name": "Port Said", "lat": 31.2653, "lon": 32.3019 }
+        ]
+    },
+    {
+        "country": "SV",
+        "country_name": "El Salvador",
+        "cities": [
+            { "name": "San Salvador", "lat": 13.6929, "lon": -89.2182 },
+            { "name": "Santa Ana", "lat": 13.9942, "lon": -89.5597 },
+            { "name": "San Miguel", "lat": 13.4833, "lon": -88.1833 },
+            { "name": "Mejicanos", "lat": 13.7342, "lon": -89.2247 },
+            { "name": "Soyapango", "lat": 13.7103, "lon": -89.14 }
+        ]
+    },
+    {
+        "country": "GQ",
+        "country_name": "Equatorial Guinea",
+        "cities": [
+            { "name": "Malabo", "lat": 3.75, "lon": 8.7833 },
+            { "name": "Bata", "lat": 1.8633, "lon": 9.7667 },
+            { "name": "Ebebiyín", "lat": 2.15, "lon": 11.3167 },
+            { "name": "Aconibe", "lat": 1.3, "lon": 10.9333 },
+            { "name": "Mongomo", "lat": 1.6333, "lon": 11.3167 }
+        ]
+    },
+    {
+        "country": "ER",
+        "country_name": "Eritrea",
+        "cities": [
+            { "name": "Asmara", "lat": 15.338, "lon": 38.93 },
+            { "name": "Keren", "lat": 15.7781, "lon": 38.4511 },
+            { "name": "Massawa", "lat": 15.6083, "lon": 39.475 },
+            { "name": "Assab", "lat": 13.0092, "lon": 42.7394 },
+            { "name": "Mendefera", "lat": 14.8872, "lon": 38.8153 }
+        ]
+    },
+    {
+        "country": "EE",
+        "country_name": "Estonia",
+        "cities": [
+            { "name": "Tallinn", "lat": 59.437, "lon": 24.7535 },
+            { "name": "Tartu", "lat": 58.37, "lon": 26.73 },
+            { "name": "Narva", "lat": 59.3792, "lon": 28.1903 },
+            { "name": "Pärnu", "lat": 58.3855, "lon": 24.4972 },
+            { "name": "Kohtla-Järve", "lat": 59.4, "lon": 27.2833 }
+        ]
+    },
+    {
+        "country": "SZ",
+        "country_name": "Eswatini",
+        "cities": [
+            { "name": "Mbabane", "lat": -26.3167, "lon": 31.1333 },
+            { "name": "Manzini", "lat": -26.4833, "lon": 31.3833 },
+            { "name": "Big Bend", "lat": -26.8167, "lon": 31.9333 },
+            { "name": "Lobamba", "lat": -26.45, "lon": 31.2 },
+            { "name": "Siteki", "lat": -26.45, "lon": 31.95 }
+        ]
+    },
+    {
+        "country": "ET",
+        "country_name": "Ethiopia",
+        "cities": [
+            { "name": "Addis Ababa", "lat": 9.0333, "lon": 38.7 },
+            { "name": "Dire Dawa", "lat": 9.5931, "lon": 41.85 },
+            { "name": "Mek'ele", "lat": 13.4936, "lon": 39.4706 },
+            { "name": "Bahir Dar", "lat": 11.5936, "lon": 37.3908 },
+            { "name": "Gondar", "lat": 12.603, "lon": 37.452 }
+        ]
+    },
+    {
+        "country": "FJ",
+        "country_name": "Fiji",
+        "cities": [
+            { "name": "Suva", "lat": -18.1416, "lon": 178.4419 },
+            { "name": "Lautoka", "lat": -17.6167, "lon": 177.4667 },
+            { "name": "Nadi", "lat": -17.8031, "lon": 177.4167 },
+            { "name": "Labasa", "lat": -16.4333, "lon": 179.3667 },
+            { "name": "Sigatoka", "lat": -18.143, "lon": 177.505 }
+        ]
+    },
+    {
+        "country": "FI",
+        "country_name": "Finland",
+        "cities": [
+            { "name": "Helsinki", "lat": 60.1699, "lon": 24.9384 },
+            { "name": "Espoo", "lat": 60.205, "lon": 24.6522 },
+            { "name": "Tampere", "lat": 61.498, "lon": 23.761 },
+            { "name": "Vantaa", "lat": 60.2932, "lon": 25.04 },
+            { "name": "Turku", "lat": 60.4518, "lon": 22.2666 }
+        ]
+    },
+    {
+        "country": "FR",
+        "country_name": "France",
+        "cities": [
+            { "name": "Paris", "lat": 48.8566, "lon": 2.3522 },
+            { "name": "Marseille", "lat": 43.2965, "lon": 5.3698 },
+            { "name": "Lyon", "lat": 45.764, "lon": 4.8357 },
+            { "name": "Toulouse", "lat": 43.6047, "lon": 1.4442 },
+            { "name": "Nice", "lat": 43.7102, "lon": 7.262 }
+        ]
+    },
+    {
+        "country": "GA",
+        "country_name": "Gabon",
+        "cities": [
+            { "name": "Libreville", "lat": 0.4162, "lon": 9.4701 },
+            { "name": "Port-Gentil", "lat": -0.7191, "lon": 8.7815 },
+            { "name": "Franceville", "lat": -1.6333, "lon": 13.5833 },
+            { "name": "Oyem", "lat": 1.5994, "lon": 11.5791 },
+            { "name": "Moanda", "lat": -1.5667, "lon": 13.2 }
+        ]
+    },
+    {
+        "country": "GM",
+        "country_name": "Gambia",
+        "cities": [
+            { "name": "Banjul", "lat": 13.4549, "lon": -16.579 },
+            { "name": "Serekunda", "lat": 13.4383, "lon": -16.6781 },
+            { "name": "Brikama", "lat": 13.2667, "lon": -16.65 },
+            { "name": "Bakau", "lat": 13.4783, "lon": -16.6817 },
+            { "name": "Farafenni", "lat": 13.5667, "lon": -15.6 }
+        ]
+    },
+    {
+        "country": "GE",
+        "country_name": "Georgia",
+        "cities": [
+            { "name": "Tbilisi", "lat": 41.7151, "lon": 44.8271 },
+            { "name": "Batumi", "lat": 41.6437, "lon": 41.6328 },
+            { "name": "Kutaisi", "lat": 42.2697, "lon": 42.6928 },
+            { "name": "Rustavi", "lat": 41.5333, "lon": 45.0167 },
+            { "name": "Zugdidi", "lat": 42.5083, "lon": 41.8708 }
+        ]
+    },
+    {
+        "country": "DE",
+        "country_name": "Germany",
+        "cities": [
+            { "name": "Berlin", "lat": 52.52, "lon": 13.405 },
+            { "name": "Hamburg", "lat": 53.5511, "lon": 9.9937 },
+            { "name": "Munich", "lat": 48.1351, "lon": 11.582 },
+            { "name": "Cologne", "lat": 50.9413, "lon": 6.9583 },
+            { "name": "Frankfurt", "lat": 50.1109, "lon": 8.6821 }
+        ]
+    },
+    {
+        "country": "GH",
+        "country_name": "Ghana",
+        "cities": [
+            { "name": "Accra", "lat": 5.6037, "lon": -0.187 },
+            { "name": "Kumasi", "lat": 6.6666, "lon": -1.6163 },
+            { "name": "Tamale", "lat": 9.4, "lon": -0.84 },
+            { "name": "Takoradi", "lat": 4.8845, "lon": -1.7554 },
+            { "name": "Cape Coast", "lat": 5.105, "lon": -1.2466 }
+        ]
+    },
+    {
+        "country": "GR",
+        "country_name": "Greece",
+        "cities": [
+            { "name": "Athens", "lat": 37.9838, "lon": 23.7275 },
+            { "name": "Thessaloniki", "lat": 40.6401, "lon": 22.9444 },
+            { "name": "Patras", "lat": 38.2466, "lon": 21.7345 },
+            { "name": "Heraklion", "lat": 35.3397, "lon": 25.1442 },
+            { "name": "Larissa", "lat": 39.639, "lon": 22.4192 }
+        ]
+    },
+    {
+        "country": "GD",
+        "country_name": "Grenada",
+        "cities": [
+            { "name": "St. George's", "lat": 12.0526, "lon": -61.7522 },
+            { "name": "Gouyave", "lat": 12.1667, "lon": -61.7333 },
+            { "name": "Grenville", "lat": 12.15, "lon": -61.6167 },
+            { "name": "Victoria", "lat": 12.1667, "lon": -61.6667 },
+            { "name": "Sauteurs", "lat": 12.2167, "lon": -61.6333 }
+        ]
+    },
+    {
+        "country": "GT",
+        "country_name": "Guatemala",
+        "cities": [
+            { "name": "Guatemala City", "lat": 14.6349, "lon": -90.5069 },
+            { "name": "Quetzaltenango", "lat": 14.8347, "lon": -91.5181 },
+            { "name": "Escuintla", "lat": 14.3, "lon": -90.7833 },
+            { "name": "Mixco", "lat": 14.6333, "lon": -90.6167 },
+            { "name": "Jutiapa", "lat": 14.2917, "lon": -89.8956 }
+        ]
+    },
+    {
+        "country": "GN",
+        "country_name": "Guinea",
+        "cities": [
+            { "name": "Conakry", "lat": 9.6412, "lon": -13.5782 },
+            { "name": "Nzérékoré", "lat": 7.75, "lon": -8.8167 },
+            { "name": "Kankan", "lat": 10.3833, "lon": -9.3 },
+            { "name": "Kindia", "lat": 10.05, "lon": -12.8667 },
+            { "name": "Labé", "lat": 11.3167, "lon": -12.2833 }
+        ]
+    },
+    {
+        "country": "GW",
+        "country_name": "Guinea-Bissau",
+        "cities": [
+            { "name": "Bissau", "lat": 11.8636, "lon": -15.5971 },
+            { "name": "Bafatá", "lat": 12.1667, "lon": -14.6667 },
+            { "name": "Gabú", "lat": 11.9, "lon": -13.55 },
+            { "name": "Bissorã", "lat": 12.2333, "lon": -15.45 },
+            { "name": "Bolama", "lat": 11.5833, "lon": -15.4833 }
+        ]
+    },
+    {
+        "country": "GY",
+        "country_name": "Guyana",
+        "cities": [
+            { "name": "Georgetown", "lat": 6.8013, "lon": -58.1551 },
+            { "name": "Linden", "lat": 6.0, "lon": -58.3 },
+            { "name": "New Amsterdam", "lat": 6.25, "lon": -57.5167 },
+            { "name": "Anna Regina", "lat": 7.2667, "lon": -58.5 },
+            { "name": "Bartica", "lat": 6.4, "lon": -58.6167 }
+        ]
+    },
+    {
+        "country": "HT",
+        "country_name": "Haiti",
+        "cities": [
+            { "name": "Port-au-Prince", "lat": 18.5392, "lon": -72.335 },
+            { "name": "Carrefour", "lat": 18.5411, "lon": -72.3992 },
+            { "name": "Delmas", "lat": 18.5447, "lon": -72.3022 },
+            { "name": "Cap-Haïtien", "lat": 19.7578, "lon": -72.1992 },
+            { "name": "Pétion-Ville", "lat": 18.5125, "lon": -72.285 }
+        ]
+    },
+    {
+        "country": "HN",
+        "country_name": "Honduras",
+        "cities": [
+            { "name": "Tegucigalpa", "lat": 14.0818, "lon": -87.2068 },
+            { "name": "San Pedro Sula", "lat": 15.5042, "lon": -88.025 },
+            { "name": "Choloma", "lat": 15.615, "lon": -87.9533 },
+            { "name": "La Ceiba", "lat": 15.7594, "lon": -86.7892 },
+            { "name": "El Progreso", "lat": 15.4, "lon": -87.8 }
+        ]
+    },
+    {
+        "country": "HU",
+        "country_name": "Hungary",
+        "cities": [
+            { "name": "Budapest", "lat": 47.4979, "lon": 19.0402 },
+            { "name": "Debrecen", "lat": 47.5316, "lon": 21.6273 },
+            { "name": "Szeged", "lat": 46.253, "lon": 20.1414 },
+            { "name": "Miskolc", "lat": 48.1035, "lon": 20.7784 },
+            { "name": "Pécs", "lat": 46.0727, "lon": 18.2323 }
+        ]
+    },
+    {
+        "country": "IS",
+        "country_name": "Iceland",
+        "cities": [
+            { "name": "Reykjavik", "lat": 64.1353, "lon": -21.8952 },
+            { "name": "Kópavogur", "lat": 64.1145, "lon": -21.911 },
+            { "name": "Hafnarfjörður", "lat": 64.2556, "lon": -21.9378 },
+            { "name": "Akureyri", "lat": 65.6835, "lon": -18.088 },
+            { "name": "Reykjanesbær", "lat": 63.9945, "lon": -22.558 }
+        ]
+    },
+    {
+        "country": "IN",
+        "country_name": "India",
+        "cities": [
+            { "name": "Mumbai", "lat": 19.076, "lon": 72.8777 },
+            { "name": "Delhi", "lat": 28.7041, "lon": 77.1025 },
+            { "name": "Bangalore", "lat": 12.9716, "lon": 77.5946 },
+            { "name": "Hyderabad", "lat": 17.385, "lon": 78.4867 },
+            { "name": "Chennai", "lat": 13.0827, "lon": 80.2707 }
+        ]
+    },
+    {
+        "country": "ID",
+        "country_name": "Indonesia",
+        "cities": [
+            { "name": "Jakarta", "lat": -6.1744, "lon": 106.8294 },
+            { "name": "Surabaya", "lat": -7.25, "lon": 112.75 },
+            { "name": "Bandung", "lat": -6.9175, "lon": 107.6191 },
+            { "name": "Medan", "lat": 3.5833, "lon": 98.6667 },
+            { "name": "Semarang", "lat": -6.9667, "lon": 110.4167 }
+        ]
+    },
+    {
+        "country": "IR",
+        "country_name": "Iran",
+        "cities": [
+            { "name": "Tehran", "lat": 35.6892, "lon": 51.389 },
+            { "name": "Mashhad", "lat": 36.298, "lon": 59.6056 },
+            { "name": "Isfahan", "lat": 32.6525, "lon": 51.6746 },
+            { "name": "Karaj", "lat": 35.8327, "lon": 50.9916 },
+            { "name": "Tabriz", "lat": 38.08, "lon": 46.2919 }
+        ]
+    },
+    {
+        "country": "IQ",
+        "country_name": "Iraq",
+        "cities": [
+            { "name": "Baghdad", "lat": 33.3152, "lon": 44.3661 },
+            { "name": "Basra", "lat": 30.5, "lon": 47.8167 },
+            { "name": "Mosul", "lat": 36.345, "lon": 43.145 },
+            { "name": "Erbil", "lat": 36.1833, "lon": 44.0111 },
+            { "name": "Najaf", "lat": 31.9968, "lon": 44.3267 }
+        ]
+    },
+    {
+        "country": "IE",
+        "country_name": "Ireland",
+        "cities": [
+            { "name": "Dublin", "lat": 53.3498, "lon": -6.2603 },
+            { "name": "Cork", "lat": 51.8985, "lon": -8.4756 },
+            { "name": "Limerick", "lat": 52.6667, "lon": -8.6333 },
+            { "name": "Galway", "lat": 53.2707, "lon": -9.0567 },
+            { "name": "Waterford", "lat": 52.2583, "lon": -7.1117 }
+        ]
+    },
+    {
+        "country": "IL",
+        "country_name": "Israel",
+        "cities": [
+            { "name": "Jerusalem", "lat": 31.7683, "lon": 35.2137 },
+            { "name": "Tel Aviv", "lat": 32.0853, "lon": 34.7818 },
+            { "name": "Haifa", "lat": 32.794, "lon": 34.9896 },
+            { "name": "Rishon LeZion", "lat": 31.971, "lon": 34.7914 },
+            { "name": "Petah Tikva", "lat": 32.0935, "lon": 34.88 }
+        ]
+    },
+    {
+        "country": "IT",
+        "country_name": "Italy",
+        "cities": [
+            { "name": "Rome", "lat": 41.9028, "lon": 12.4964 },
+            { "name": "Milan", "lat": 45.4642, "lon": 9.19 },
+            { "name": "Naples", "lat": 40.8522, "lon": 14.2681 },
+            { "name": "Turin", "lat": 45.0703, "lon": 7.6869 },
+            { "name": "Palermo", "lat": 38.1157, "lon": 13.3615 }
+        ]
+    },
+    {
+        "country": "JM",
+        "country_name": "Jamaica",
+        "cities": [
+            { "name": "Kingston", "lat": 17.9689, "lon": -76.8 },
+            { "name": "Spanish Town", "lat": 17.991, "lon": -76.9574 },
+            { "name": "Montego Bay", "lat": 18.4667, "lon": -77.9167 },
+            { "name": "Mandeville", "lat": 18.0333, "lon": -77.5 },
+            { "name": "May Pen", "lat": 17.9667, "lon": -77.25 }
+        ]
+    },
+    {
+        "country": "JP",
+        "country_name": "Japan",
+        "cities": [
+            { "name": "Tokyo", "lat": 35.6762, "lon": 139.6503 },
+            { "name": "Osaka", "lat": 34.6937, "lon": 135.5023 },
+            { "name": "Nagoya", "lat": 35.1815, "lon": 136.9066 },
+            { "name": "Sapporo", "lat": 43.0621, "lon": 141.3544 },
+            { "name": "Fukuoka", "lat": 33.5904, "lon": 130.4017 }
+        ]
+    },
+    {
+        "country": "JO",
+        "country_name": "Jordan",
+        "cities": [
+            { "name": "Amman", "lat": 31.95, "lon": 35.95 },
+            { "name": "Zarqa", "lat": 32.0833, "lon": 36.1 },
+            { "name": "Irbid", "lat": 32.5556, "lon": 35.8499 },
+            { "name": "Russeifa", "lat": 32.0167, "lon": 36.05 },
+            { "name": "Aqaba", "lat": 29.5267, "lon": 35.0067 }
+        ]
+    },
+    {
+        "country": "KZ",
+        "country_name": "Kazakhstan",
+        "cities": [
+            { "name": "Astana", "lat": 51.1694, "lon": 71.4492 },
+            { "name": "Almaty", "lat": 43.2367, "lon": 76.9456 },
+            { "name": "Shymkent", "lat": 42.3, "lon": 69.6 },
+            { "name": "Karaganda", "lat": 49.801, "lon": 73.1 },
+            { "name": "Aktobe", "lat": 50.2833, "lon": 57.1667 }
+        ]
+    },
+    {
+        "country": "KE",
+        "country_name": "Kenya",
+        "cities": [
+            { "name": "Nairobi", "lat": -1.2921, "lon": 36.8219 },
+            { "name": "Mombasa", "lat": -4.0435, "lon": 39.6682 },
+            { "name": "Kisumu", "lat": -0.0917, "lon": 34.7679 },
+            { "name": "Nakuru", "lat": -0.3031, "lon": 36.0667 },
+            { "name": "Eldoret", "lat": 0.5167, "lon": 35.2667 }
+        ]
+    },
+    {
+        "country": "KI",
+        "country_name": "Kiribati",
+        "cities": [
+            { "name": "Tarawa", "lat": 1.3275, "lon": 172.9767 },
+            { "name": "Betio", "lat": 1.3583, "lon": 172.92 },
+            { "name": "Bikenibeu", "lat": 1.3678, "lon": 173.1283 },
+            { "name": "Teaoraereke", "lat": 1.3333, "lon": 173.0333 },
+            { "name": "Eita", "lat": 1.35, "lon": 173.0833 }
+        ]
+    },
+    {
+        "country": "KP",
+        "country_name": "North Korea",
+        "cities": [
+            { "name": "Pyongyang", "lat": 39.0392, "lon": 125.7625 },
+            { "name": "Hamhung", "lat": 39.9167, "lon": 127.5364 },
+            { "name": "Nampo", "lat": 38.7372, "lon": 125.4078 },
+            { "name": "Chongjin", "lat": 41.8053, "lon": 129.775 },
+            { "name": "Kaesong", "lat": 37.9667, "lon": 126.5667 }
+        ]
+    },
+    {
+        "country": "KR",
+        "country_name": "South Korea",
+        "cities": [
+            { "name": "Seoul", "lat": 37.5665, "lon": 126.978 },
+            { "name": "Busan", "lat": 35.1796, "lon": 129.0756 },
+            { "name": "Incheon", "lat": 37.4563, "lon": 126.7052 },
+            { "name": "Daegu", "lat": 35.8714, "lon": 128.6014 },
+            { "name": "Daejeon", "lat": 36.3504, "lon": 127.3845 }
+        ]
+    },
+    {
+        "country": "KW",
+        "country_name": "Kuwait",
+        "cities": [
+            { "name": "Kuwait City", "lat": 29.3759, "lon": 47.9774 },
+            { "name": "Al Jahra", "lat": 29.3381, "lon": 47.6581 },
+            { "name": "Salmiya", "lat": 29.34, "lon": 48.0783 },
+            { "name": "Hawalli", "lat": 29.3333, "lon": 48.0333 },
+            { "name": "Farwaniya", "lat": 29.2722, "lon": 47.9372 }
+        ]
+    },
+    {
+        "country": "KG",
+        "country_name": "Kyrgyzstan",
+        "cities": [
+            { "name": "Bishkek", "lat": 42.8746, "lon": 74.5698 },
+            { "name": "Osh", "lat": 40.5283, "lon": 72.7986 },
+            { "name": "Jalal-Abad", "lat": 40.9333, "lon": 73.0 },
+            { "name": "Karakol", "lat": 42.4906, "lon": 78.3911 },
+            { "name": "Tokmok", "lat": 42.8417, "lon": 75.3017 }
+        ]
+    },
+    {
+        "country": "LA",
+        "country_name": "Laos",
+        "cities": [
+            { "name": "Vientiane", "lat": 17.9757, "lon": 102.6331 },
+            { "name": "Pakse", "lat": 15.12, "lon": 105.8 },
+            { "name": "Savannakhet", "lat": 16.5667, "lon": 104.75 },
+            { "name": "Luang Prabang", "lat": 19.8833, "lon": 102.1333 },
+            { "name": "Thakhek", "lat": 17.41, "lon": 104.83 }
+        ]
+    },
+    {
+        "country": "LV",
+        "country_name": "Latvia",
+        "cities": [
+            { "name": "Riga", "lat": 56.9496, "lon": 24.1052 },
+            { "name": "Daugavpils", "lat": 55.8745, "lon": 26.5383 },
+            { "name": "Liepāja", "lat": 56.5047, "lon": 21.01 },
+            { "name": "Jelgava", "lat": 56.65, "lon": 23.7167 },
+            { "name": "Jūrmala", "lat": 56.97, "lon": 23.77 }
+        ]
+    },
+    {
+        "country": "LB",
+        "country_name": "Lebanon",
+        "cities": [
+            { "name": "Beirut", "lat": 33.8938, "lon": 35.5018 },
+            { "name": "Tripoli", "lat": 34.4336, "lon": 35.8444 },
+            { "name": "Sidon", "lat": 33.5631, "lon": 35.3689 },
+            { "name": "Tyre", "lat": 33.2733, "lon": 35.2039 },
+            { "name": "Zahle", "lat": 33.85, "lon": 35.9 }
+        ]
+    },
+    {
+        "country": "LS",
+        "country_name": "Lesotho",
+        "cities": [
+            { "name": "Maseru", "lat": -29.31, "lon": 27.48 },
+            { "name": "Teyateyaneng", "lat": -29.15, "lon": 27.6167 },
+            { "name": "Mafeteng", "lat": -29.8333, "lon": 27.25 },
+            { "name": "Hlotse", "lat": -28.8667, "lon": 28.0333 },
+            { "name": "Qacha's Nek", "lat": -30.1167, "lon": 28.6833 }
+        ]
+    },
+    {
+        "country": "LR",
+        "country_name": "Liberia",
+        "cities": [
+            { "name": "Monrovia", "lat": 6.3156, "lon": -10.8074 },
+            { "name": "Gbarnga", "lat": 6.9959, "lon": -9.4715 },
+            { "name": "Kakata", "lat": 6.53, "lon": -10.35 },
+            { "name": "Bensonville", "lat": 6.4478, "lon": -10.6206 },
+            { "name": "Harper", "lat": 4.3783, "lon": -7.7169 }
+        ]
+    },
+    {
+        "country": "LY",
+        "country_name": "Libya",
+        "cities": [
+            { "name": "Tripoli", "lat": 32.8872, "lon": 13.1913 },
+            { "name": "Benghazi", "lat": 32.1167, "lon": 20.0667 },
+            { "name": "Misrata", "lat": 32.375, "lon": 15.0928 },
+            { "name": "Bayda", "lat": 32.7628, "lon": 21.7683 },
+            { "name": "Zawiya", "lat": 32.7522, "lon": 12.7278 }
+        ]
+    },
+    {
+        "country": "LI",
+        "country_name": "Liechtenstein",
+        "cities": [
+            { "name": "Vaduz", "lat": 47.1411, "lon": 9.5209 },
+            { "name": "Schaan", "lat": 47.1657, "lon": 9.5072 },
+            { "name": "Balzers", "lat": 47.0676, "lon": 9.5025 },
+            { "name": "Triesen", "lat": 47.1114, "lon": 9.5278 },
+            { "name": "Eschen", "lat": 47.2114, "lon": 9.5242 }
+        ]
+    },
+    {
+        "country": "LT",
+        "country_name": "Lithuania",
+        "cities": [
+            { "name": "Vilnius", "lat": 54.6872, "lon": 25.279 },
+            { "name": "Kaunas", "lat": 54.8985, "lon": 23.9036 },
+            { "name": "Klaipėda", "lat": 55.7033, "lon": 21.144 },
+            { "name": "Šiauliai", "lat": 55.9333, "lon": 23.3167 },
+            { "name": "Panevėžys", "lat": 55.7333, "lon": 24.35 }
+        ]
+    },
+    {
+        "country": "LU",
+        "country_name": "Luxembourg",
+        "cities": [
+            { "name": "Luxembourg City", "lat": 49.6116, "lon": 6.1319 },
+            { "name": "Esch-sur-Alzette", "lat": 49.5, "lon": 5.9833 },
+            { "name": "Differdange", "lat": 49.52, "lon": 5.89 },
+            { "name": "Dudelange", "lat": 49.4783, "lon": 6.0861 },
+            { "name": "Ettelbruck", "lat": 49.8472, "lon": 6.1042 }
+        ]
+    },
+    {
+        "country": "MG",
+        "country_name": "Madagascar",
+        "cities": [
+            { "name": "Antananarivo", "lat": -18.9333, "lon": 47.5167 },
+            { "name": "Toamasina", "lat": -18.15, "lon": 49.4 },
+            { "name": "Antsirabe", "lat": -19.8667, "lon": 47.0333 },
+            { "name": "Mahajanga", "lat": -15.7167, "lon": 46.3167 },
+            { "name": "Fianarantsoa", "lat": -21.45, "lon": 47.0833 }
+        ]
+    },
+    {
+        "country": "MW",
+        "country_name": "Malawi",
+        "cities": [
+            { "name": "Lilongwe", "lat": -13.9833, "lon": 33.7833 },
+            { "name": "Blantyre", "lat": -15.785, "lon": 35.0085 },
+            { "name": "Mzuzu", "lat": -11.4667, "lon": 34.0167 },
+            { "name": "Zomba", "lat": -15.3833, "lon": 35.3167 },
+            { "name": "Kasungu", "lat": -13.0333, "lon": 33.4833 }
+        ]
+    },
+    {
+        "country": "MY",
+        "country_name": "Malaysia",
+        "cities": [
+            { "name": "Kuala Lumpur", "lat": 3.139, "lon": 101.6869 },
+            { "name": "George Town", "lat": 5.4142, "lon": 100.3288 },
+            { "name": "Ipoh", "lat": 4.5989, "lon": 101.0835 },
+            { "name": "Johor Bahru", "lat": 1.4655, "lon": 103.7578 },
+            { "name": "Kota Kinabalu", "lat": 5.9757, "lon": 116.0724 }
+        ]
+    },
+    {
+        "country": "MV",
+        "country_name": "Maldives",
+        "cities": [
+            { "name": "Malé", "lat": 4.1755, "lon": 73.5089 },
+            { "name": "Addu City", "lat": -0.5987, "lon": 73.1588 },
+            { "name": "Fuvahmulah", "lat": -0.3, "lon": 73.4333 },
+            { "name": "Hithadhoo", "lat": -0.6, "lon": 73.0833 },
+            { "name": "Kulhudhuffushi", "lat": 6.622, "lon": 73.07 }
+        ]
+    },
+    {
+        "country": "ML",
+        "country_name": "Mali",
+        "cities": [
+            { "name": "Bamako", "lat": 12.6392, "lon": -8.0029 },
+            { "name": "Sikasso", "lat": 11.3167, "lon": -5.6667 },
+            { "name": "Kayes", "lat": 14.4433, "lon": -11.4444 },
+            { "name": "Mopti", "lat": 14.4833, "lon": -4.2 },
+            { "name": "Ségou", "lat": 13.4333, "lon": -6.2667 }
+        ]
+    },
+    {
+        "country": "MT",
+        "country_name": "Malta",
+        "cities": [
+            { "name": "Valletta", "lat": 35.8989, "lon": 14.5147 },
+            { "name": "Birkirkara", "lat": 35.8972, "lon": 14.4647 },
+            { "name": "Qormi", "lat": 35.875, "lon": 14.47 },
+            { "name": "Mosta", "lat": 35.9092, "lon": 14.4253 },
+            { "name": "Żabbar", "lat": 35.8817, "lon": 14.5461 }
+        ]
+    },
+    {
+        "country": "MH",
+        "country_name": "Marshall Islands",
+        "cities": [
+            { "name": "Majuro", "lat": 7.0897, "lon": 171.3801 },
+            { "name": "Ebeye", "lat": 7.4, "lon": 168.6667 },
+            { "name": "Jaluit", "lat": 5.9167, "lon": 169.6333 },
+            { "name": "Wotje", "lat": 9.4667, "lon": 170.2333 },
+            { "name": "Kwajalein", "lat": 8.7333, "lon": 167.7333 }
+        ]
+    },
+    {
+        "country": "MR",
+        "country_name": "Mauritania",
+        "cities": [
+            { "name": "Nouakchott", "lat": 18.0735, "lon": -15.9582 },
+            { "name": "Nouadhibou", "lat": 20.931, "lon": -17.0347 },
+            { "name": "Kiffa", "lat": 16.6167, "lon": -11.4 },
+            { "name": "Zouérat", "lat": 22.7333, "lon": -12.4667 },
+            { "name": "Rosso", "lat": 16.5133, "lon": -15.8 }
+        ]
+    },
+    {
+        "country": "MU",
+        "country_name": "Mauritius",
+        "cities": [
+            { "name": "Port Louis", "lat": -20.1653, "lon": 57.5012 },
+            {
+                "name": "Beau Bassin-Rose Hill",
+                "lat": -20.2333,
+                "lon": 57.4667
+            },
+            { "name": "Vacoas-Phoenix", "lat": -20.3, "lon": 57.4833 },
+            { "name": "Curepipe", "lat": -20.3167, "lon": 57.5167 },
+            { "name": "Quatre Bornes", "lat": -20.2667, "lon": 57.4667 }
+        ]
+    },
+    {
+        "country": "MX",
+        "country_name": "Mexico",
+        "cities": [
+            { "name": "Mexico City", "lat": 19.4326, "lon": -99.1332 },
+            { "name": "Guadalajara", "lat": 20.6597, "lon": -103.3496 },
+            { "name": "Monterrey", "lat": 25.6866, "lon": -100.3161 },
+            { "name": "Puebla", "lat": 19.0414, "lon": -98.2062 },
+            { "name": "Tijuana", "lat": 32.5027, "lon": -117.0037 }
+        ]
+    },
+    {
+        "country": "FM",
+        "country_name": "Micronesia",
+        "cities": [
+            { "name": "Palikir", "lat": 6.9247, "lon": 158.1612 },
+            { "name": "Weno", "lat": 7.45, "lon": 151.85 },
+            { "name": "Colonia", "lat": 9.5167, "lon": 138.1167 },
+            { "name": "Tofol", "lat": -11.5667, "lon": 163.0167 },
+            { "name": "Lelu", "lat": 5.3333, "lon": 163.0167 }
+        ]
+    },
+    {
+        "country": "MD",
+        "country_name": "Moldova",
+        "cities": [
+            { "name": "Chișinău", "lat": 47.0105, "lon": 28.8638 },
+            { "name": "Tiraspol", "lat": 46.84, "lon": 29.6433 },
+            { "name": "Bălți", "lat": 47.7617, "lon": 27.9283 },
+            { "name": "Bender", "lat": 46.8317, "lon": 29.4783 },
+            { "name": "Ungheni", "lat": 47.2058, "lon": 27.7992 }
+        ]
+    },
+    {
+        "country": "MC",
+        "country_name": "Monaco",
+        "cities": [
+            { "name": "Monaco", "lat": 43.7384, "lon": 7.4246 },
+            { "name": "Monte Carlo", "lat": 43.7397, "lon": 7.4271 },
+            { "name": "La Condamine", "lat": 43.735, "lon": 7.42 },
+            { "name": "Fontvieille", "lat": 43.7294, "lon": 7.4167 },
+            { "name": "Moneghetti", "lat": 43.74, "lon": 7.42 }
+        ]
+    },
+    {
+        "country": "MN",
+        "country_name": "Mongolia",
+        "cities": [
+            { "name": "Ulaanbaatar", "lat": 47.922, "lon": 106.9181 },
+            { "name": "Erdenet", "lat": 49.0333, "lon": 104.05 },
+            { "name": "Darkhan", "lat": 49.4726, "lon": 105.9575 },
+            { "name": "Choibalsan", "lat": 48.0667, "lon": 114.5 },
+            { "name": "Khovd", "lat": 48.0056, "lon": 91.6419 }
+        ]
+    },
+    {
+        "country": "ME",
+        "country_name": "Montenegro",
+        "cities": [
+            { "name": "Podgorica", "lat": 42.441, "lon": 19.2627 },
+            { "name": "Nikšić", "lat": 42.7736, "lon": 18.9461 },
+            { "name": "Pljevlja", "lat": 43.3567, "lon": 19.36 },
+            { "name": "Bijelo Polje", "lat": 43.0025, "lon": 19.7456 },
+            { "name": "Herceg Novi", "lat": 42.4531, "lon": 18.5336 }
+        ]
+    },
+    {
+        "country": "MA",
+        "country_name": "Morocco",
+        "cities": [
+            { "name": "Rabat", "lat": 34.0209, "lon": -6.8416 },
+            { "name": "Casablanca", "lat": 33.5731, "lon": -7.5898 },
+            { "name": "Fes", "lat": 34.0242, "lon": -5.0023 },
+            { "name": "Marrakesh", "lat": 31.6295, "lon": -7.9811 },
+            { "name": "Tangier", "lat": 35.7602, "lon": -5.8336 }
+        ]
+    },
+    {
+        "country": "MZ",
+        "country_name": "Mozambique",
+        "cities": [
+            { "name": "Maputo", "lat": -25.9655, "lon": 32.5892 },
+            { "name": "Matola", "lat": -25.9625, "lon": 32.4589 },
+            { "name": "Nampula", "lat": -15.1167, "lon": 39.2667 },
+            { "name": "Beira", "lat": -19.8436, "lon": 34.8389 },
+            { "name": "Chimoio", "lat": -19.1167, "lon": 33.4833 }
+        ]
+    },
+    {
+        "country": "MM",
+        "country_name": "Myanmar",
+        "cities": [
+            { "name": "Naypyidaw", "lat": 19.75, "lon": 96.1 },
+            { "name": "Yangon", "lat": 16.8661, "lon": 96.1951 },
+            { "name": "Mandalay", "lat": 21.975, "lon": 96.0833 },
+            { "name": "Mawlamyine", "lat": 16.49, "lon": 97.63 },
+            { "name": "Bago", "lat": 17.3333, "lon": 96.4833 }
+        ]
+    },
+    {
+        "country": "NA",
+        "country_name": "Namibia",
+        "cities": [
+            { "name": "Windhoek", "lat": -22.5597, "lon": 17.0832 },
+            { "name": "Rundu", "lat": -17.9333, "lon": 19.7667 },
+            { "name": "Walvis Bay", "lat": -22.9575, "lon": 14.5053 },
+            { "name": "Swakopmund", "lat": -22.6833, "lon": 14.5333 },
+            { "name": "Oshakati", "lat": -17.7833, "lon": 15.6833 }
+        ]
+    },
+    {
+        "country": "NR",
+        "country_name": "Nauru",
+        "cities": [
+            { "name": "Yaren", "lat": -0.5477, "lon": 166.9209 },
+            { "name": "Boe", "lat": -0.5333, "lon": 166.9167 },
+            { "name": "Buada", "lat": -0.5333, "lon": 166.9333 },
+            { "name": "Denigomodu", "lat": -0.5167, "lon": 166.9333 },
+            { "name": "Nibok", "lat": -0.5167, "lon": 166.9167 }
+        ]
+    },
+    {
+        "country": "NP",
+        "country_name": "Nepal",
+        "cities": [
+            { "name": "Kathmandu", "lat": 27.7172, "lon": 85.324 },
+            { "name": "Pokhara", "lat": 28.2096, "lon": 83.9856 },
+            { "name": "Lalitpur", "lat": 27.6667, "lon": 85.3167 },
+            { "name": "Biratnagar", "lat": 26.4833, "lon": 87.2833 },
+            { "name": "Birgunj", "lat": 27.0167, "lon": 84.8667 }
+        ]
+    },
+    {
+        "country": "NL",
+        "country_name": "Netherlands",
+        "cities": [
+            { "name": "Amsterdam", "lat": 52.3676, "lon": 4.9041 },
+            { "name": "Rotterdam", "lat": 51.9225, "lon": 4.4792 },
+            { "name": "The Hague", "lat": 52.0705, "lon": 4.3007 },
+            { "name": "Utrecht", "lat": 52.0907, "lon": 5.1214 },
+            { "name": "Eindhoven", "lat": 51.4416, "lon": 5.4697 }
+        ]
+    },
+    {
+        "country": "NZ",
+        "country_name": "New Zealand",
+        "cities": [
+            { "name": "Auckland", "lat": -36.8485, "lon": 174.7633 },
+            { "name": "Wellington", "lat": -41.2865, "lon": 174.7762 },
+            { "name": "Christchurch", "lat": -43.5321, "lon": 172.6362 },
+            { "name": "Hamilton", "lat": -37.7833, "lon": 175.2833 },
+            { "name": "Tauranga", "lat": -37.6875, "lon": 176.1667 }
+        ]
+    },
+    {
+        "country": "NI",
+        "country_name": "Nicaragua",
+        "cities": [
+            { "name": "Managua", "lat": 12.1149, "lon": -86.2362 },
+            { "name": "León", "lat": 12.4377, "lon": -86.878 },
+            { "name": "Granada", "lat": 11.9329, "lon": -85.9561 },
+            { "name": "Masaya", "lat": 11.975, "lon": -86.0942 },
+            { "name": "Chinandega", "lat": 12.6294, "lon": -87.1304 }
+        ]
+    },
+    {
+        "country": "NE",
+        "country_name": "Niger",
+        "cities": [
+            { "name": "Niamey", "lat": 13.5116, "lon": 2.1254 },
+            { "name": "Zinder", "lat": 13.8, "lon": 8.9833 },
+            { "name": "Maradi", "lat": 13.5, "lon": 7.1 },
+            { "name": "Agadez", "lat": 16.9733, "lon": 7.9911 },
+            { "name": "Tahoua", "lat": 14.8833, "lon": 5.25 }
+        ]
+    },
+    {
+        "country": "NG",
+        "country_name": "Nigeria",
+        "cities": [
+            { "name": "Lagos", "lat": 6.5244, "lon": 3.3792 },
+            { "name": "Kano", "lat": 12.0, "lon": 8.5167 },
+            { "name": "Ibadan", "lat": 7.3775, "lon": 3.9058 },
+            { "name": "Abuja", "lat": 9.0765, "lon": 7.3986 },
+            { "name": "Port Harcourt", "lat": 4.7774, "lon": 7.0131 }
+        ]
+    },
+    {
+        "country": "NO",
+        "country_name": "Norway",
+        "cities": [
+            { "name": "Oslo", "lat": 59.9139, "lon": 10.7522 },
+            { "name": "Bergen", "lat": 60.3913, "lon": 5.3221 },
+            { "name": "Trondheim", "lat": 63.4305, "lon": 10.3951 },
+            { "name": "Stavanger", "lat": 58.9695, "lon": 5.7331 },
+            { "name": "Kristiansand", "lat": 58.1467, "lon": 7.9956 }
+        ]
+    },
+    {
+        "country": "OM",
+        "country_name": "Oman",
+        "cities": [
+            { "name": "Muscat", "lat": 23.588, "lon": 58.383 },
+            { "name": "Seeb", "lat": 23.67, "lon": 58.19 },
+            { "name": "Salalah", "lat": 17.0151, "lon": 54.0913 },
+            { "name": "Nizwa", "lat": 22.9333, "lon": 57.5333 },
+            { "name": "Sohar", "lat": 24.3438, "lon": 56.7094 }
+        ]
+    },
+    {
+        "country": "PK",
+        "country_name": "Pakistan",
+        "cities": [
+            { "name": "Karachi", "lat": 24.8607, "lon": 67.0011 },
+            { "name": "Lahore", "lat": 31.5204, "lon": 74.3587 },
+            { "name": "Faisalabad", "lat": 31.418, "lon": 73.079 },
+            { "name": "Rawalpindi", "lat": 33.6007, "lon": 73.0679 },
+            { "name": "Islamabad", "lat": 33.6844, "lon": 73.0479 }
+        ]
+    },
+    {
+        "country": "PW",
+        "country_name": "Palau",
+        "cities": [
+            { "name": "Ngerulmud", "lat": 7.5, "lon": 134.6244 },
+            { "name": "Koror", "lat": 7.3369, "lon": 134.4792 },
+            { "name": "Melekeok", "lat": 7.4933, "lon": 134.6417 },
+            { "name": "Angaur", "lat": 6.9167, "lon": 134.1333 },
+            { "name": "Peleliu", "lat": 7.0, "lon": 134.25 }
+        ]
+    },
+    {
+        "country": "PA",
+        "country_name": "Panama",
+        "cities": [
+            { "name": "Panama City", "lat": 8.9936, "lon": -79.5188 },
+            { "name": "San Miguelito", "lat": 9.05, "lon": -79.4833 },
+            { "name": "Colón", "lat": 9.3667, "lon": -79.9 },
+            { "name": "David", "lat": 8.4333, "lon": -82.4333 },
+            { "name": "La Chorrera", "lat": 8.8833, "lon": -79.7833 }
+        ]
+    },
+    {
+        "country": "PG",
+        "country_name": "Papua New Guinea",
+        "cities": [
+            { "name": "Port Moresby", "lat": -9.4438, "lon": 147.1803 },
+            { "name": "Lae", "lat": -6.7167, "lon": 146.9833 },
+            { "name": "Arawa", "lat": -6.2333, "lon": 155.55 },
+            { "name": "Mount Hagen", "lat": -5.8667, "lon": 144.2333 },
+            { "name": "Madang", "lat": -5.2217, "lon": 145.7867 }
+        ]
+    },
+    {
+        "country": "PY",
+        "country_name": "Paraguay",
+        "cities": [
+            { "name": "Asunción", "lat": -25.2637, "lon": -57.5759 },
+            { "name": "Ciudad del Este", "lat": -25.5167, "lon": -54.6167 },
+            { "name": "San Lorenzo", "lat": -25.3333, "lon": -57.5167 },
+            { "name": "Luque", "lat": -25.2667, "lon": -57.4833 },
+            { "name": "Capiatá", "lat": -25.355, "lon": -57.445 }
+        ]
+    },
+    {
+        "country": "PE",
+        "country_name": "Peru",
+        "cities": [
+            { "name": "Lima", "lat": -12.0464, "lon": -77.0428 },
+            { "name": "Arequipa", "lat": -16.3989, "lon": -71.535 },
+            { "name": "Trujillo", "lat": -8.1117, "lon": -79.0283 },
+            { "name": "Chiclayo", "lat": -6.7719, "lon": -79.8409 },
+            { "name": "Piura", "lat": -5.1945, "lon": -80.6325 }
+        ]
+    },
+    {
+        "country": "PH",
+        "country_name": "Philippines",
+        "cities": [
+            { "name": "Quezon City", "lat": 14.676, "lon": 121.0437 },
+            { "name": "Manila", "lat": 14.5995, "lon": 120.9842 },
+            { "name": "Davao City", "lat": 7.0731, "lon": 125.6125 },
+            { "name": "Cebu City", "lat": 10.3157, "lon": 123.8854 },
+            { "name": "Zamboanga City", "lat": 6.9103, "lon": 122.0739 }
+        ]
+    },
+    {
+        "country": "PL",
+        "country_name": "Poland",
+        "cities": [
+            { "name": "Warsaw", "lat": 52.2297, "lon": 21.0122 },
+            { "name": "Kraków", "lat": 50.0647, "lon": 19.945 },
+            { "name": "Łódź", "lat": 51.7592, "lon": 19.456 },
+            { "name": "Wrocław", "lat": 51.1079, "lon": 17.0385 },
+            { "name": "Poznań", "lat": 52.4064, "lon": 16.9252 }
+        ]
+    },
+    {
+        "country": "PT",
+        "country_name": "Portugal",
+        "cities": [
+            { "name": "Lisbon", "lat": 38.7223, "lon": -9.1393 },
+            { "name": "Porto", "lat": 41.1579, "lon": -8.6291 },
+            { "name": "Coimbra", "lat": 40.2056, "lon": -8.4197 },
+            { "name": "Braga", "lat": 41.55, "lon": -8.42 },
+            { "name": "Setúbal", "lat": 38.5243, "lon": -8.892 }
+        ]
+    },
+    {
+        "country": "QA",
+        "country_name": "Qatar",
+        "cities": [
+            { "name": "Doha", "lat": 25.2854, "lon": 51.531 },
+            { "name": "Al Rayyan", "lat": 25.2917, "lon": 51.425 },
+            { "name": "Umm Salal Mohammed", "lat": 25.4167, "lon": 51.4 },
+            { "name": "Al Wakrah", "lat": 25.1717, "lon": 51.6033 },
+            { "name": "Al Khor", "lat": 25.6833, "lon": 51.5 }
+        ]
+    },
+    {
+        "country": "RO",
+        "country_name": "Romania",
+        "cities": [
+            { "name": "Bucharest", "lat": 44.4268, "lon": 26.1025 },
+            { "name": "Cluj-Napoca", "lat": 46.7712, "lon": 23.6236 },
+            { "name": "Timișoara", "lat": 45.7537, "lon": 21.2257 },
+            { "name": "Iași", "lat": 47.1745, "lon": 27.5749 },
+            { "name": "Constanța", "lat": 44.1819, "lon": 28.634 }
+        ]
+    },
+    {
+        "country": "RU",
+        "country_name": "Russia",
+        "cities": [
+            { "name": "Moscow", "lat": 55.7558, "lon": 37.6173 },
+            { "name": "Saint Petersburg", "lat": 59.9343, "lon": 30.3351 },
+            { "name": "Novosibirsk", "lat": 55.0084, "lon": 82.9357 },
+            { "name": "Yekaterinburg", "lat": 56.8389, "lon": 60.6057 },
+            { "name": "Nizhny Novgorod", "lat": 56.2965, "lon": 43.9366 }
+        ]
+    },
+    {
+        "country": "RW",
+        "country_name": "Rwanda",
+        "cities": [
+            { "name": "Kigali", "lat": -1.9441, "lon": 30.0611 },
+            { "name": "Butare", "lat": -2.6, "lon": 29.7333 },
+            { "name": "Gisenyi", "lat": -1.6833, "lon": 29.25 },
+            { "name": "Ruhengeri", "lat": -1.5, "lon": 29.6333 },
+            { "name": "Byumba", "lat": -1.5767, "lon": 30.0683 }
+        ]
+    },
+    {
+        "country": "KN",
+        "country_name": "Saint Kitts and Nevis",
+        "cities": [
+            { "name": "Basseterre", "lat": 17.3, "lon": -62.7167 },
+            { "name": "Sandy Point Town", "lat": 17.3667, "lon": -62.85 },
+            { "name": "Cayon", "lat": 17.35, "lon": -62.7667 },
+            { "name": "Charlestown", "lat": 17.1333, "lon": -62.6167 },
+            { "name": "Dieppe Bay Town", "lat": 17.4, "lon": -62.8 }
+        ]
+    },
+    {
+        "country": "LC",
+        "country_name": "Saint Lucia",
+        "cities": [
+            { "name": "Castries", "lat": 14.01, "lon": -60.9878 },
+            { "name": "Vieux Fort", "lat": 13.7167, "lon": -60.95 },
+            { "name": "Micoud", "lat": 13.8167, "lon": -60.9 },
+            { "name": "Soufrière", "lat": 13.85, "lon": -61.0667 },
+            { "name": "Gros Islet", "lat": 14.0667, "lon": -60.95 }
+        ]
+    },
+    {
+        "country": "VC",
+        "country_name": "Saint Vincent and the Grenadines",
+        "cities": [
+            { "name": "Kingstown", "lat": 13.1592, "lon": -61.2269 },
+            { "name": "Georgetown", "lat": 13.3667, "lon": -61.15 },
+            { "name": "Byera Village", "lat": 13.15, "lon": -61.2 },
+            { "name": "Chateaubelair", "lat": 13.3, "lon": -61.25 },
+            { "name": "Port Elizabeth", "lat": 13.1167, "lon": -61.2333 }
+        ]
+    },
+    {
+        "country": "WS",
+        "country_name": "Samoa",
+        "cities": [
+            { "name": "Apia", "lat": -13.8333, "lon": -171.7667 },
+            { "name": "Asau", "lat": -13.5167, "lon": -172.6333 },
+            { "name": "Faleula", "lat": -13.7833, "lon": -171.8333 },
+            { "name": "Leulumoega", "lat": -13.8239, "lon": -171.9342 },
+            { "name": "Mulifanua", "lat": -13.835, "lon": -172.0186 }
+        ]
+    },
+    {
+        "country": "SM",
+        "country_name": "San Marino",
+        "cities": [
+            { "name": "San Marino", "lat": 43.9367, "lon": 12.4464 },
+            { "name": "Serravalle", "lat": 43.9667, "lon": 12.4833 },
+            { "name": "Borgo Maggiore", "lat": 43.95, "lon": 12.45 },
+            { "name": "Domagnano", "lat": 43.9333, "lon": 12.4667 },
+            { "name": "Fiorentino", "lat": 43.9167, "lon": 12.4667 }
+        ]
+    },
+    {
+        "country": "ST",
+        "country_name": "São Tomé and Príncipe",
+        "cities": [
+            { "name": "São Tomé", "lat": 0.3333, "lon": 6.7333 },
+            { "name": "Santo António", "lat": 1.6417, "lon": 7.4167 },
+            { "name": "Trindade", "lat": 0.3, "lon": 6.7 },
+            { "name": "Neves", "lat": 0.35, "lon": 6.55 },
+            { "name": "Santana", "lat": 0.35, "lon": 6.7333 }
+        ]
+    },
+    {
+        "country": "SA",
+        "country_name": "Saudi Arabia",
+        "cities": [
+            { "name": "Riyadh", "lat": 24.7136, "lon": 46.6753 },
+            { "name": "Jeddah", "lat": 21.4858, "lon": 39.1925 },
+            { "name": "Mecca", "lat": 21.3891, "lon": 39.8579 },
+            { "name": "Dammam", "lat": 26.3921, "lon": 49.9786 },
+            { "name": "Medina", "lat": 24.4678, "lon": 39.6143 }
+        ]
+    },
+    {
+        "country": "SN",
+        "country_name": "Senegal",
+        "cities": [
+            { "name": "Dakar", "lat": 14.7167, "lon": -17.4677 },
+            { "name": "Touba", "lat": 14.8667, "lon": -15.8833 },
+            { "name": "Thiès", "lat": 14.7833, "lon": -16.9333 },
+            { "name": "Kaolack", "lat": 14.15, "lon": -16.0833 },
+            { "name": "Ziguinchor", "lat": 12.5833, "lon": -16.2667 }
+        ]
+    },
+    {
+        "country": "RS",
+        "country_name": "Serbia",
+        "cities": [
+            { "name": "Belgrade", "lat": 44.7866, "lon": 20.4489 },
+            { "name": "Novi Sad", "lat": 45.2671, "lon": 19.8335 },
+            { "name": "Niš", "lat": 43.3191, "lon": 21.8959 },
+            { "name": "Kragujevac", "lat": 44.0167, "lon": 20.9167 },
+            { "name": "Subotica", "lat": 46.1, "lon": 19.6667 }
+        ]
+    },
+    {
+        "country": "SC",
+        "country_name": "Seychelles",
+        "cities": [
+            { "name": "Victoria", "lat": -4.6191, "lon": 55.4515 },
+            { "name": "Anse Royale", "lat": -4.7333, "lon": 55.5167 },
+            { "name": "Beau Vallon", "lat": -4.6167, "lon": 55.4167 },
+            { "name": "Takamaka", "lat": -4.75, "lon": 55.5 },
+            { "name": "Anse Boileau", "lat": -4.7, "lon": 55.4833 }
+        ]
+    },
+    {
+        "country": "SL",
+        "country_name": "Sierra Leone",
+        "cities": [
+            { "name": "Freetown", "lat": 8.4657, "lon": -13.2317 },
+            { "name": "Bo", "lat": 7.9647, "lon": -11.7383 },
+            { "name": "Kenema", "lat": 7.8769, "lon": -11.1876 },
+            { "name": "Makeni", "lat": 8.88, "lon": -12.04 },
+            { "name": "Koidu", "lat": 8.6333, "lon": -10.95 }
+        ]
+    },
+    {
+        "country": "SG",
+        "country_name": "Singapore",
+        "cities": [
+            { "name": "Singapore", "lat": 1.3521, "lon": 103.8198 },
+            { "name": "Jurong West", "lat": 1.3412, "lon": 103.7055 },
+            { "name": "Woodlands", "lat": 1.4369, "lon": 103.7869 },
+            { "name": "Punggol", "lat": 1.405, "lon": 103.9042 },
+            { "name": "Choa Chu Kang", "lat": 1.3847, "lon": 103.749 }
+        ]
+    },
+    {
+        "country": "SK",
+        "country_name": "Slovakia",
+        "cities": [
+            { "name": "Bratislava", "lat": 48.1486, "lon": 17.1077 },
+            { "name": "Košice", "lat": 48.7213, "lon": 21.2575 },
+            { "name": "Prešov", "lat": 48.9983, "lon": 21.2345 },
+            { "name": "Žilina", "lat": 49.2231, "lon": 18.7394 },
+            { "name": "Banská Bystrica", "lat": 48.7363, "lon": 19.1435 }
+        ]
+    },
+    {
+        "country": "SI",
+        "country_name": "Slovenia",
+        "cities": [
+            { "name": "Ljubljana", "lat": 46.0569, "lon": 14.5058 },
+            { "name": "Maribor", "lat": 46.5547, "lon": 15.6467 },
+            { "name": "Celje", "lat": 46.2309, "lon": 15.2604 },
+            { "name": "Kranj", "lat": 46.2389, "lon": 14.3556 },
+            { "name": "Velenje", "lat": 46.3592, "lon": 15.11 }
+        ]
+    },
+    {
+        "country": "SB",
+        "country_name": "Solomon Islands",
+        "cities": [
+            { "name": "Honiara", "lat": -9.4456, "lon": 159.957 },
+            { "name": "Auki", "lat": -8.767, "lon": 160.7 },
+            { "name": "Gizo", "lat": -8.1033, "lon": 156.8417 },
+            { "name": "Buala", "lat": -8.145, "lon": 159.5922 },
+            { "name": "Kirakira", "lat": -10.4542, "lon": 161.9206 }
+        ]
+    },
+    {
+        "country": "SO",
+        "country_name": "Somalia",
+        "cities": [
+            { "name": "Mogadishu", "lat": 2.0469, "lon": 45.3182 },
+            { "name": "Hargeisa", "lat": 9.5624, "lon": 44.077 },
+            { "name": "Baidoa", "lat": 3.1138, "lon": 43.6498 },
+            { "name": "Kismayo", "lat": -0.3582, "lon": 42.5407 },
+            { "name": "Jowhar", "lat": 2.775, "lon": 45.5 }
+        ]
+    },
+    {
+        "country": "ZA",
+        "country_name": "South Africa",
+        "cities": [
+            { "name": "Johannesburg", "lat": -26.2041, "lon": 28.0473 },
+            { "name": "Cape Town", "lat": -33.9249, "lon": 18.4241 },
+            { "name": "Durban", "lat": -29.8587, "lon": 31.0218 },
+            { "name": "Pretoria", "lat": -25.7463, "lon": 28.1876 },
+            { "name": "Port Elizabeth", "lat": -33.9608, "lon": 25.6022 }
+        ]
+    },
+    {
+        "country": "SS",
+        "country_name": "South Sudan",
+        "cities": [
+            { "name": "Juba", "lat": 4.8517, "lon": 31.5825 },
+            { "name": "Malakal", "lat": 9.5333, "lon": 31.65 },
+            { "name": "Wau", "lat": 7.7, "lon": 27.9833 },
+            { "name": "Yambio", "lat": 4.57, "lon": 28.4 },
+            { "name": "Bor", "lat": 6.2092, "lon": 31.5586 }
+        ]
+    },
+    {
+        "country": "ES",
+        "country_name": "Spain",
+        "cities": [
+            { "name": "Madrid", "lat": 40.4168, "lon": -3.7038 },
+            { "name": "Barcelona", "lat": 41.3851, "lon": 2.1734 },
+            { "name": "Valencia", "lat": 39.4699, "lon": -0.3763 },
+            { "name": "Seville", "lat": 37.3891, "lon": -5.9845 },
+            { "name": "Zaragoza", "lat": 41.6488, "lon": -0.8891 }
+        ]
+    },
+    {
+        "country": "LK",
+        "country_name": "Sri Lanka",
+        "cities": [
+            { "name": "Colombo", "lat": 6.9271, "lon": 79.8612 },
+            { "name": "Kandy", "lat": 7.2906, "lon": 80.6337 },
+            { "name": "Jaffna", "lat": 9.6615, "lon": 80.0074 },
+            { "name": "Galle", "lat": 6.0333, "lon": 80.2167 },
+            { "name": "Negombo", "lat": 7.2083, "lon": 79.8358 }
+        ]
+    },
+    {
+        "country": "SD",
+        "country_name": "Sudan",
+        "cities": [
+            { "name": "Khartoum", "lat": 15.5007, "lon": 32.5599 },
+            { "name": "Omdurman", "lat": 15.6445, "lon": 32.4777 },
+            { "name": "Port Sudan", "lat": 19.6175, "lon": 37.2164 },
+            { "name": "Kassala", "lat": 15.4583, "lon": 36.4 },
+            { "name": "El Obeid", "lat": 13.1833, "lon": 30.2167 }
+        ]
+    },
+    {
+        "country": "SR",
+        "country_name": "Suriname",
+        "cities": [
+            { "name": "Paramaribo", "lat": 5.852, "lon": -55.2038 },
+            { "name": "Lelydorp", "lat": 5.7, "lon": -55.2333 },
+            { "name": "Nieuw Nickerie", "lat": 5.9333, "lon": -57.0 },
+            { "name": "Moengo", "lat": 5.6167, "lon": -54.4 },
+            { "name": "Albina", "lat": 5.5, "lon": -54.05 }
+        ]
+    },
+    {
+        "country": "SE",
+        "country_name": "Sweden",
+        "cities": [
+            { "name": "Stockholm", "lat": 59.3293, "lon": 18.0686 },
+            { "name": "Gothenburg", "lat": 57.7089, "lon": 11.9746 },
+            { "name": "Malmö", "lat": 55.605, "lon": 13.0038 },
+            { "name": "Uppsala", "lat": 59.8586, "lon": 17.6389 },
+            { "name": "Västerås", "lat": 59.6162, "lon": 16.5528 }
+        ]
+    },
+    {
+        "country": "CH",
+        "country_name": "Switzerland",
+        "cities": [
+            { "name": "Zurich", "lat": 47.3769, "lon": 8.5417 },
+            { "name": "Geneva", "lat": 46.2044, "lon": 6.1432 },
+            { "name": "Basel", "lat": 47.5596, "lon": 7.5886 },
+            { "name": "Lausanne", "lat": 46.5197, "lon": 6.6323 },
+            { "name": "Bern", "lat": 46.9481, "lon": 7.4474 }
+        ]
+    },
+    {
+        "country": "SY",
+        "country_name": "Syria",
+        "cities": [
+            { "name": "Damascus", "lat": 33.5131, "lon": 36.2765 },
+            { "name": "Aleppo", "lat": 36.2013, "lon": 37.1612 },
+            { "name": "Homs", "lat": 34.7265, "lon": 36.7231 },
+            { "name": "Hama", "lat": 35.1318, "lon": 36.7578 },
+            { "name": "Latakia", "lat": 35.5317, "lon": 35.7902 }
+        ]
+    },
+    {
+        "country": "TW",
+        "country_name": "Taiwan",
+        "cities": [
+            { "name": "Taipei", "lat": 25.032, "lon": 121.5654 },
+            { "name": "Kaohsiung", "lat": 22.6273, "lon": 120.3014 },
+            { "name": "Taichung", "lat": 24.1477, "lon": 120.6737 },
+            { "name": "Tainan", "lat": 22.9908, "lon": 120.2108 },
+            { "name": "Hsinchu", "lat": 24.8138, "lon": 120.9686 }
+        ]
+    },
+    {
+        "country": "TJ",
+        "country_name": "Tajikistan",
+        "cities": [
+            { "name": "Dushanbe", "lat": 38.5737, "lon": 68.7791 },
+            { "name": "Khujand", "lat": 40.2833, "lon": 69.6167 },
+            { "name": "Kulyab", "lat": 37.9167, "lon": 69.8 },
+            { "name": "Qurghonteppa", "lat": 37.8333, "lon": 68.5833 },
+            { "name": "Istaravshan", "lat": 39.9142, "lon": 69.0 }
+        ]
+    },
+    {
+        "country": "TZ",
+        "country_name": "Tanzania",
+        "cities": [
+            { "name": "Dar es Salaam", "lat": -6.8235, "lon": 39.2695 },
+            { "name": "Dodoma", "lat": -6.172, "lon": 35.7516 },
+            { "name": "Mwanza", "lat": -2.5167, "lon": 32.9 },
+            { "name": "Arusha", "lat": -3.3667, "lon": 36.6833 },
+            { "name": "Mbeya", "lat": -8.9, "lon": 33.45 }
+        ]
+    },
+    {
+        "country": "TH",
+        "country_name": "Thailand",
+        "cities": [
+            { "name": "Bangkok", "lat": 13.7563, "lon": 100.5018 },
+            { "name": "Chiang Mai", "lat": 18.7883, "lon": 98.9853 },
+            { "name": "Songkhla", "lat": 7.1989, "lon": 100.5951 },
+            { "name": "Nakhon Ratchasima", "lat": 14.9799, "lon": 102.0978 },
+            { "name": "Hat Yai", "lat": 7.0083, "lon": 100.475 }
+        ]
+    },
+    {
+        "country": "TL",
+        "country_name": "Timor-Leste",
+        "cities": [
+            { "name": "Dili", "lat": -8.5586, "lon": 125.5736 },
+            { "name": "Baucau", "lat": -8.4714, "lon": 126.4575 },
+            { "name": "Same", "lat": -9.0, "lon": 125.65 },
+            { "name": "Maliana", "lat": -8.9939, "lon": 125.2197 },
+            { "name": "Pante Macassar", "lat": -9.2, "lon": 124.3833 }
+        ]
+    },
+    {
+        "country": "TG",
+        "country_name": "Togo",
+        "cities": [
+            { "name": "Lomé", "lat": 6.1375, "lon": 1.2123 },
+            { "name": "Sokodé", "lat": 8.9833, "lon": 1.15 },
+            { "name": "Kara", "lat": 9.5511, "lon": 1.1861 },
+            { "name": "Atakpamé", "lat": 7.5333, "lon": 1.1333 },
+            { "name": "Dapaong", "lat": 10.85, "lon": 0.2 }
+        ]
+    },
+    {
+        "country": "TO",
+        "country_name": "Tonga",
+        "cities": [
+            { "name": "Nukuʻalofa", "lat": -21.1394, "lon": -175.2018 },
+            { "name": "Neiafu", "lat": -18.65, "lon": -174.95 },
+            { "name": "Pangai", "lat": -19.8167, "lon": -174.35 },
+            { "name": "Hihifo", "lat": -16.6667, "lon": -173.9167 },
+            { "name": "Muʻa", "lat": -21.1667, "lon": -175.1167 }
+        ]
+    },
+    {
+        "country": "TT",
+        "country_name": "Trinidad and Tobago",
+        "cities": [
+            { "name": "Port of Spain", "lat": 10.6602, "lon": -61.5087 },
+            { "name": "San Fernando", "lat": 10.28, "lon": -61.4583 },
+            { "name": "Chaguanas", "lat": 10.5167, "lon": -61.4167 },
+            { "name": "Arima", "lat": 10.6378, "lon": -61.2822 },
+            { "name": "Point Fortin", "lat": 10.1667, "lon": -61.6833 }
+        ]
+    },
+    {
+        "country": "TN",
+        "country_name": "Tunisia",
+        "cities": [
+            { "name": "Tunis", "lat": 36.8065, "lon": 10.1815 },
+            { "name": "Sfax", "lat": 34.74, "lon": 10.76 },
+            { "name": "Sousse", "lat": 35.825, "lon": 10.6378 },
+            { "name": "Kairouan", "lat": 35.6711, "lon": 10.1006 },
+            { "name": "Gabès", "lat": 33.8817, "lon": 10.0983 }
+        ]
+    },
+    {
+        "country": "TR",
+        "country_name": "Turkey",
+        "cities": [
+            { "name": "Istanbul", "lat": 41.0082, "lon": 28.9784 },
+            { "name": "Ankara", "lat": 39.9255, "lon": 32.8663 },
+            { "name": "Izmir", "lat": 38.4237, "lon": 27.1428 },
+            { "name": "Bursa", "lat": 40.1828, "lon": 29.0672 },
+            { "name": "Antalya", "lat": 36.8969, "lon": 30.7069 }
+        ]
+    },
+    {
+        "country": "TM",
+        "country_name": "Turkmenistan",
+        "cities": [
+            { "name": "Ashgabat", "lat": 37.96, "lon": 58.326 },
+            { "name": "Türkmenabat", "lat": 39.0833, "lon": 63.5833 },
+            { "name": "Daşoguz", "lat": 41.8364, "lon": 59.9661 },
+            { "name": "Mary", "lat": 37.5938, "lon": 61.8303 },
+            { "name": "Balkanabat", "lat": 39.5167, "lon": 54.3667 }
+        ]
+    },
+    {
+        "country": "TV",
+        "country_name": "Tuvalu",
+        "cities": [
+            { "name": "Funafuti", "lat": -8.5167, "lon": 179.1942 },
+            { "name": "Savave Village", "lat": -8.5, "lon": 179.1833 },
+            { "name": "Tanrake Village", "lat": -7.9833, "lon": 179.1333 },
+            { "name": "Asau Village", "lat": -8.5333, "lon": 179.2 },
+            { "name": "Kulia Village", "lat": -8.5167, "lon": 179.1667 }
+        ]
+    },
+    {
+        "country": "UG",
+        "country_name": "Uganda",
+        "cities": [
+            { "name": "Kampala", "lat": 0.3476, "lon": 32.5825 },
+            { "name": "Gulu", "lat": 2.7746, "lon": 32.299 },
+            { "name": "Lira", "lat": 2.25, "lon": 32.9 },
+            { "name": "Mbale", "lat": 1.0822, "lon": 34.175 },
+            { "name": "Jinja", "lat": 0.4398, "lon": 33.2033 }
+        ]
+    },
+    {
+        "country": "UA",
+        "country_name": "Ukraine",
+        "cities": [
+            { "name": "Kyiv", "lat": 50.4501, "lon": 30.5234 },
+            { "name": "Kharkiv", "lat": 49.9935, "lon": 36.2304 },
+            { "name": "Odesa", "lat": 46.4825, "lon": 30.7233 },
+            { "name": "Dnipro", "lat": 48.4647, "lon": 35.0462 },
+            { "name": "Donetsk", "lat": 48.0158, "lon": 37.8028 }
+        ]
+    },
+    {
+        "country": "AE",
+        "country_name": "United Arab Emirates",
+        "cities": [
+            { "name": "Dubai", "lat": 25.2048, "lon": 55.2708 },
+            { "name": "Abu Dhabi", "lat": 24.4539, "lon": 54.3773 },
+            { "name": "Sharjah", "lat": 25.3467, "lon": 55.4211 },
+            { "name": "Al Ain", "lat": 24.1917, "lon": 55.7606 },
+            { "name": "Ajman", "lat": 25.4052, "lon": 55.5136 }
+        ]
+    },
+    {
+        "country": "GB",
+        "country_name": "United Kingdom",
+        "cities": [
+            { "name": "London", "lat": 51.5074, "lon": -0.1278 },
+            { "name": "Manchester", "lat": 53.4808, "lon": -2.2426 },
+            { "name": "Birmingham", "lat": 52.4862, "lon": -1.8904 },
+            { "name": "Glasgow", "lat": 55.8606, "lon": -4.2518 },
+            { "name": "Liverpool", "lat": 53.4084, "lon": -2.9916 }
+        ]
+    },
+    {
+        "country": "US",
+        "country_name": "United States",
+        "cities": [
+            { "name": "New York", "lat": 40.7128, "lon": -74.006 },
+            { "name": "Los Angeles", "lat": 34.0522, "lon": -118.2437 },
+            { "name": "Chicago", "lat": 41.8781, "lon": -87.6298 },
+            { "name": "Houston", "lat": 29.7604, "lon": -95.3698 },
+            { "name": "Phoenix", "lat": 33.4484, "lon": -112.074 }
+        ]
+    },
+    {
+        "country": "UY",
+        "country_name": "Uruguay",
+        "cities": [
+            { "name": "Montevideo", "lat": -34.9011, "lon": -56.1645 },
+            { "name": "Salto", "lat": -31.3833, "lon": -57.9667 },
+            { "name": "Paysandú", "lat": -32.3167, "lon": -58.0833 },
+            { "name": "Las Piedras", "lat": -34.7333, "lon": -56.2167 },
+            { "name": "Rivera", "lat": -30.9, "lon": -55.55 }
+        ]
+    },
+    {
+        "country": "UZ",
+        "country_name": "Uzbekistan",
+        "cities": [
+            { "name": "Tashkent", "lat": 41.2995, "lon": 69.2401 },
+            { "name": "Namangan", "lat": 40.9983, "lon": 71.6725 },
+            { "name": "Samarkand", "lat": 39.6542, "lon": 66.9597 },
+            { "name": "Andijan", "lat": 40.7833, "lon": 72.3333 },
+            { "name": "Bukhara", "lat": 39.7703, "lon": 64.428 }
+        ]
+    },
+    {
+        "country": "VU",
+        "country_name": "Vanuatu",
+        "cities": [
+            { "name": "Port Vila", "lat": -17.7333, "lon": 168.3167 },
+            { "name": "Luganville", "lat": -15.5167, "lon": 167.1667 },
+            { "name": "Isangel", "lat": -19.5333, "lon": 169.2667 },
+            { "name": "Sola", "lat": -13.85, "lon": 167.55 },
+            { "name": "Lakatoro", "lat": -16.0833, "lon": 167.4167 }
+        ]
+    },
+    {
+        "country": "VE",
+        "country_name": "Venezuela",
+        "cities": [
+            { "name": "Caracas", "lat": 10.4806, "lon": -66.9036 },
+            { "name": "Maracaibo", "lat": 10.6317, "lon": -71.6406 },
+            { "name": "Valencia", "lat": 10.162, "lon": -67.987 },
+            { "name": "Barquisimeto", "lat": 10.0642, "lon": -69.357 },
+            { "name": "Ciudad Guayana", "lat": 8.3516, "lon": -62.6534 }
+        ]
+    },
+    {
+        "country": "VN",
+        "country_name": "Vietnam",
+        "cities": [
+            { "name": "Hanoi", "lat": 21.0278, "lon": 105.8342 },
+            { "name": "Ho Chi Minh City", "lat": 10.8231, "lon": 106.6296 },
+            { "name": "Da Nang", "lat": 16.0544, "lon": 108.2022 },
+            { "name": "Can Tho", "lat": 10.0451, "lon": 105.7498 },
+            { "name": "Hai Phong", "lat": 20.8648, "lon": 106.6835 }
+        ]
+    },
+    {
+        "country": "YE",
+        "country_name": "Yemen",
+        "cities": [
+            { "name": "Sana'a", "lat": 15.3694, "lon": 44.191 },
+            { "name": "Aden", "lat": 12.7855, "lon": 45.0187 },
+            { "name": "Ta'izz", "lat": 13.5776, "lon": 44.0177 },
+            { "name": "Hodeidah", "lat": 14.7978, "lon": 42.9701 },
+            { "name": "Mukalla", "lat": 14.5403, "lon": 49.1244 }
+        ]
+    },
+    {
+        "country": "ZM",
+        "country_name": "Zambia",
+        "cities": [
+            { "name": "Lusaka", "lat": -15.3875, "lon": 28.3228 },
+            { "name": "Kitwe", "lat": -12.8023, "lon": 28.211 },
+            { "name": "Ndola", "lat": -12.9587, "lon": 28.6367 },
+            { "name": "Kabwe", "lat": -14.4469, "lon": 28.4464 },
+            { "name": "Chingola", "lat": -12.5297, "lon": 27.8836 }
+        ]
+    },
+    {
+        "country": "ZW",
+        "country_name": "Zimbabwe",
+        "cities": [
+            { "name": "Harare", "lat": -17.8293, "lon": 31.0535 },
+            { "name": "Bulawayo", "lat": -20.15, "lon": 28.5833 },
+            { "name": "Chitungwiza", "lat": -18.013, "lon": 31.0733 },
+            { "name": "Mutare", "lat": -18.9667, "lon": 32.6667 },
+            { "name": "Gweru", "lat": -19.45, "lon": 29.8167 }
+        ]
+    }
+]

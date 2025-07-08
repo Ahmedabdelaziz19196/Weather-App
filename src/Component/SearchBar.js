@@ -9,7 +9,9 @@ import axios from "axios";
 
 export default function SearchBar({ setLocation }) {
     const { darkTheme } = useContext(LightDarkContext);
+
     const [cities, setCities] = useState([]);
+
     const [inputValue, setInputValue] = useState("");
 
     const apiKey = "6c9c3b62d2d6deeb6af6cfa3d92bd664";

@@ -1,0 +1,11 @@
+@import "leaflet/dist/leaflet.css";
+
+.theMap {
+    height: calc(100vh - 90px);
+}
+
+@media (max-width: 1199px) {
+    .theMap {
+        height: 500px !important;
+    }
+}

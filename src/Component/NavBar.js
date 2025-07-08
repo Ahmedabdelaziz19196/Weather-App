@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import Stack from "@mui/material/Stack";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import MapIcon from "@mui/icons-material/Map";
-import MosqueIcon from "@mui/icons-material/Mosque";
+// import MosqueIcon from "@mui/icons-material/Mosque";
+import Settings from "./Settings";
 export default function NavBar() {
     let { darkTheme } = useContext(LightDarkContext);
 
@@ -32,7 +33,7 @@ export default function NavBar() {
                     to="/"
                     style={{ textDecoration: "none", color: "inherit" }}
                 >
-                    <div>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
                         <img
                             src={
                                 darkTheme
@@ -72,19 +73,17 @@ export default function NavBar() {
                         Map
                     </p>
                 </Link>
-
                 <Link
-                    to="/athan"
                     className="nav-icon"
-                    style={{ textDecoration: "none", color: "inherit" }}
+                    style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
                 >
-                    <MosqueIcon
-                        sx={{ height: 40, width: 40 }}
-                        className="the-icon"
-                    />
-                    <p style={{ fontSize: "14px" }} className="nav-text">
-                        Athan
-                    </p>
+                    <Settings />
                 </Link>
             </Stack>
         </div>
