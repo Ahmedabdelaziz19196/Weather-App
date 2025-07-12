@@ -1,4 +1,4 @@
-Weather App
+#Weather App
 A dynamic and user-friendly weather application built with React, designed to provide current weather conditions and 5-day/3-hour forecasts for any location worldwide.
 Description
 Weather App is a web application that allows users to check the current weather and forecast for their location or any city they search for. It features a clean, custom-designed UI with support for dark and light modes, interactive weather visualizations, and additional features like a map view and city suggestions based on the selected country.
@@ -72,14 +72,16 @@ Explore Map: View the map for the selected location.
 City Suggestions: Select a country to see up to 5 suggested cities and their weather.
 
 Contributing
-Contributions are welcome! To contribute:
 
+Contributions are welcome! To contribute:
 Fork the repository.
 Create a new branch (git checkout -b feature/your-feature).
 Make your changes and commit them (git commit -m 'Add your feature').
 Push to the branch (git push origin feature/your-feature).
 Open a pull request.
 
+
 Please ensure your code follows the project's coding style and includes appropriate documentation.
+
 License
 MIT License
