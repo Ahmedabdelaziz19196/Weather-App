@@ -44,6 +44,7 @@ A custom JSON file was created containing **193 countries**, and for each countr
   - Temperature units (°C / °F)
   - Time format (12h / 24h)
   - Wind speed units (km/h / mph)
+- 🔀 **React Routing**: Used `react-router-dom` to navigate between pages like Weather, Settings, and Map.
 - 📱 **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ---
